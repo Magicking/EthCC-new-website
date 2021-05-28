@@ -152,13 +152,6 @@ const Home = () => {
       <Container>
         <Flex>
           <Heading variant="title">Speakers</Heading>
-          {speakers.map((speaker) => (
-            <Image
-              src={speaker.picture}
-              key={`${speaker.firstname}-${speaker.lastname}`}
-              alt={speaker.lastname}
-            />
-          ))}
         </Flex>
       </Container>
     </main>
