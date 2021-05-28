@@ -64,6 +64,16 @@ export const theme = {
       },
     },
   },
+  sizes: {
+    container: `1140px`,
+  },
+  layout: {
+    container: {
+      my: `10em`,
+      display: `flex`,
+      flexDirection: `column`,
+    },
+  },
   text: {
     bigHeading: {
       fontSize: `6em`,
@@ -77,6 +87,21 @@ export const theme = {
       textTransform: `uppercase`,
       fontSize: `16px`,
       mb: `1rem`,
+    },
+    title: {
+      fontSize: `3rem`,
+      position: `relative`,
+      color: `text`,
+      pb: `30px`,
+      ':after': {
+        content: `' '`,
+        left: [0, null, `-20%`],
+        bottom: 0,
+        position: `absolute`,
+        width: `100px`,
+        height: `2px`,
+        background: `linear-gradient(to right, #262a56, #b30602 70%)`,
+      },
     },
     headerLink: {
       padding: `10px 0px`,

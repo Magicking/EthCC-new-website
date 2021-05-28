@@ -31,6 +31,7 @@ export const Header = () => {
           justifyContent: `center`,
           background: `#fff`,
           py: `1rem`,
+          zIndex: 900,
         }}
       >
         <Flex

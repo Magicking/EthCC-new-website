@@ -17,15 +17,15 @@ import {
   Label,
   Link,
   Text,
+  Button,
 } from '@components';
 import { useEagerConnect, useInactiveListener, useUnlock } from '@hooks';
-import { injected, UNLOCK_TESTNET } from '@config';
+import { injected } from '@config';
 import { getTokenMetadata } from '@utils';
 import { UnlockFormValues } from '@types';
 
 import metamask from '@assets/metamask.png';
 import { UnlockService } from '@services';
-import { connected } from 'process';
 
 export const UnlockModal = ({ closeModal }: { closeModal(): void }) => {
   const { active, activate, account, connector, library } = useWeb3React();
@@ -62,27 +62,45 @@ export const UnlockModal = ({ closeModal }: { closeModal(): void }) => {
   return (
     <Flex
       sx={{
-        position: `absolute`,
+        position: `fixed`,
         top: 0,
         left: 0,
-        width: `100%`,
-        minHeight: `100%`,
+        minWidth: `100%`,
+        height: `100vh`,
         justifyContent: `center`,
         alignItems: `center`,
         background: `rgba(0, 0, 0, 0.6)`,
         zIndex: 999,
-        overflowY: `scroll`,
+        overflowY: `auto`,
+        pt: `150px`,
       }}
     >
       <Flex
         sx={{
-          width: `500px`,
+          position: `relative`,
+          maxWidth: `500px`,
           background: `#fff`,
           flexDirection: `column`,
           p: `20px`,
-          my: `20px`,
         }}
       >
+        <Box
+          sx={{
+            position: `absolute`,
+            right: 0,
+            top: 0,
+            pr: `20px`,
+            pt: `20px`,
+            zIndex: 999,
+          }}
+        >
+          <FontAwesomeIcon
+            icon={faTimes}
+            onClick={closeModal}
+            size="1x"
+            style={{ cursor: `pointer` }}
+          />
+        </Box>
         {active ? (
           state === `unlocked` ? (
             <Flex sx={{ flexDirection: `column`, justifyContent: `center` }}>
@@ -95,6 +113,7 @@ export const UnlockModal = ({ closeModal }: { closeModal(): void }) => {
                 web3 wallet to show your ticket. You can also receive the ticket
                 as a QR code by email by{` `}
                 <Link
+                  sx={{ textDecoration: `underline` }}
                   target="_blank"
                   href="https://app.unlock-protocol.com/keychain/"
                 >
@@ -107,20 +126,12 @@ export const UnlockModal = ({ closeModal }: { closeModal(): void }) => {
             </Flex>
           ) : (
             <>
-              <Flex
-                sx={{
-                  flexDirection: `row`,
-                  justifyContent: `space-between`,
-                  alignItems: `center`,
-                }}
+              <Heading
+                variant="title"
+                sx={{ ':after': { left: 0 }, fontSize: `2.5rem`, mb: `20px` }}
               >
-                <Heading>Unlock Ticket</Heading>
-                <FontAwesomeIcon
-                  icon={faTimes}
-                  size="2x"
-                  onClick={closeModal}
-                />
-              </Flex>
+                Unlock Ticket
+              </Heading>
               <Formik
                 initialValues={{
                   email: ``,
@@ -134,7 +145,13 @@ export const UnlockModal = ({ closeModal }: { closeModal(): void }) => {
                 }}
                 onSubmit={handleFormSumbit}
               >
-                {({ values, handleSubmit, handleChange, handleBlur }) => (
+                {({
+                  values,
+                  handleSubmit,
+                  handleChange,
+                  handleBlur,
+                  isSubmitting,
+                }) => (
                   <form onSubmit={handleSubmit} style={{ width: `100%` }}>
                     <Text>
                       Please fill this form and submit to purchase a ticket with
@@ -224,7 +241,13 @@ export const UnlockModal = ({ closeModal }: { closeModal(): void }) => {
                         value={values.country}
                       />
                     </Box>
-                    <button type="submit">Test</button>
+                    <Button
+                      type="submit"
+                      disabled={isSubmitting}
+                      sx={{ width: `100%`, mt: `40px` }}
+                    >
+                      Save
+                    </Button>
                   </form>
                 )}
               </Formik>

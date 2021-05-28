@@ -1,11 +1,10 @@
-import { UNLOCK_MAINNET, UNLOCK_TESTNET } from '@config';
 import axios from 'axios';
 
 const UnlockService = () => {
   const service = axios.create({
     timeout: 20000,
     baseURL: `https://locksmith.unlock-protocol.com/api/key/${
-      Object.keys(UNLOCK_TESTNET.config.locks)[0]
+      Object.keys((window as CustomWindow).unlockProtocolConfig.locks)[0]
     }/user`,
   });
 

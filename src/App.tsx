@@ -5,7 +5,7 @@ import { Theme, ThemeProvider } from 'theme-ui';
 
 import { UnlockProvider } from '@hooks';
 import { getLibrary } from '@config';
-import { Layout } from '@components';
+import { Layout, Seo } from '@components';
 import { theme } from '@theme';
 
 import 'fontsource-roboto-mono/latin.css';
@@ -18,6 +18,7 @@ const App = () => (
   <Web3ReactProvider getLibrary={getLibrary}>
     <UnlockProvider>
       <ThemeProvider theme={theme as Theme}>
+        <Seo />
         <Layout />
       </ThemeProvider>
     </UnlockProvider>
