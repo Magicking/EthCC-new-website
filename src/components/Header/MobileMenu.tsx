@@ -21,12 +21,13 @@ export const MobileMenu = ({
         sx={{
           width: `100vw`,
           height: [isOpen ? `100vh` : `0`, null, 0],
-          position: `absolute`,
+          position: `fixed`,
           left: 0,
           right: 0,
           background: `rgba(0, 0, 0, 0.6)`,
           opacity: isOpen ? `1` : `0`,
           transition: `.3s opacity ease-in-out`,
+          zIndex: 998,
         }}
       />
       <Box
@@ -44,6 +45,7 @@ export const MobileMenu = ({
           ],
           transition: `.3s all ease-in-out`,
           boxShadow: `-10px 0 20px -10px rgb(0 0 0 / 10%);`,
+          zIndex: 999,
         }}
       >
         <Flex sx={{ flexDirection: `column`, width: `100%`, pt: `20px` }}>

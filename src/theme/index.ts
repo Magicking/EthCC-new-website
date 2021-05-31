@@ -64,20 +64,18 @@ export const theme = {
       },
     },
   },
-  sizes: {
-    container: `1140px`,
-  },
   layout: {
     container: {
       my: `10em`,
       display: `flex`,
       flexDirection: `column`,
-      px: `20px`,
+      px: `15px`,
+      maxWidth: [`480px`, `720px`, `1140px`],
     },
   },
   text: {
     bigHeading: {
-      fontSize: `6em`,
+      fontSize: [`3rem`, `5rem`, `6rem`],
       background: `linear-gradient(to right, #262a56, #b30602 70%)`,
       WebkitBackgroundClip: `text`,
       WebkitTextFillColor: `transparent`,
@@ -133,6 +131,7 @@ export const theme = {
   },
   links: {
     primary: {
+      textAlign: `center`,
       textTransform: `uppercase`,
       textDecoration: `none`,
       color: `text`,
