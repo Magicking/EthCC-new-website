@@ -72,6 +72,7 @@ export const theme = {
       my: `10em`,
       display: `flex`,
       flexDirection: `column`,
+      px: `20px`,
     },
   },
   text: {

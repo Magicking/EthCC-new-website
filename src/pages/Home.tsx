@@ -14,7 +14,11 @@ import {
   TICKET_FIAT_PAYWALL,
   BUDGET_TRANSPARENCY_ARTICLE,
   STUDENT_APPLICATION,
-  speakers,
+  SPEAKERS,
+  SPEAKER_APPLICATION,
+  PARTNERS,
+  SPONSORS,
+  YAP_MAIL,
 } from '@config';
 
 import communityPic from '@assets/community_pic.png';
@@ -150,8 +154,118 @@ const Home = () => {
         </Flex>
       </Container>
       <Container>
-        <Flex>
+        <Flex sx={{ mb: `3rem` }}>
           <Heading variant="title">Speakers</Heading>
+        </Flex>
+        <Flex sx={{ flexDirection: `row` }}>
+          <Flex sx={{ flex: `0 0 50%`, flexWrap: `wrap` }}>
+            {SPEAKERS.slice(0, 6).map((speaker) => (
+              <Flex
+                sx={{ width: `150px`, mx: `auto`, mt: `3rem` }}
+                key={`${speaker.firstname}-${speaker.lastname}`}
+              >
+                <Image
+                  sx={{
+                    borderRadius: `40px`,
+                    border: `2px solid`,
+                    borderColor: `primary`,
+                  }}
+                  src={speaker.picture}
+                  alt={`${speaker.firstname} ${speaker.lastname}`}
+                />
+              </Flex>
+            ))}
+          </Flex>
+          <Flex
+            sx={{
+              flexDirection: `column`,
+              justifyContent: `center`,
+              px: `15px`,
+              pl: `3rem`,
+            }}
+          >
+            <Heading variant="subHeading">
+              Join our community of speakers
+            </Heading>
+            <Text sx={{ mb: `1.5rem` }}>
+              We welcome any application for talks or workshops. All selected
+              speakers will have a free access to EthCC[4]
+            </Text>
+            <Flex>
+              <Link
+                variant="primary"
+                href={SPEAKER_APPLICATION}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply Here!
+              </Link>
+            </Flex>
+          </Flex>
+        </Flex>
+      </Container>
+      <Container>
+        <Flex sx={{ mb: `3rem` }}>
+          <Heading variant="title">Partners</Heading>
+        </Flex>
+        <Flex
+          sx={{ flexDirection: `row`, alignItems: `center`, flexWrap: `wrap` }}
+        >
+          {PARTNERS.map((sponsor) => (
+            <Link
+              href={sponsor.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={sponsor.name}
+            >
+              <Image
+                src={sponsor.picture}
+                alt={sponsor.name}
+                width="300px"
+                sx={{ mr: `80px`, maxHeight: `480px` }}
+              />
+            </Link>
+          ))}
+        </Flex>
+      </Container>
+      <Container>
+        <Flex sx={{ mb: `3rem` }}>
+          <Heading variant="title">Sponsors</Heading>
+        </Flex>
+
+        {Object.keys(SPONSORS).map((level) => (
+          <Flex sx={{ flexDirection: `column` }} key={level}>
+            <Heading
+              variant="subHeading"
+              sx={{ fontSize: `1.75rem` }}
+            >{`${level} Sponsors`}</Heading>
+            <Flex sx={{ mb: `3rem`, mt: `1.75rem` }}>
+              {SPONSORS[level].map((sponsor) => (
+                <Link
+                  key={sponsor.name}
+                  href={sponsor.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={sponsor.picture}
+                    alt={sponsor.name}
+                    sx={{ maxWidth: `150px`, maxHeight: `200px` }}
+                  />
+                </Link>
+              ))}
+            </Flex>
+          </Flex>
+        ))}
+      </Container>
+      <Container>
+        <Flex sx={{ mb: `3rem` }}>
+          <Heading variant="title">Media</Heading>
+        </Flex>
+        <Flex>
+          <Link variant="primary" href={YAP_MAIL}>
+            Contact Us!
+          </Link>
         </Flex>
       </Container>
     </main>

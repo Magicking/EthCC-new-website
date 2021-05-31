@@ -7,7 +7,7 @@ interface Speaker {
   isFeatured?: boolean;
 }
 
-export const speakers: Speaker[] = [
+export const SPEAKERS: Speaker[] = [
   {
     company: `Ethereum Foundation`,
     firstname: `Martin`,
