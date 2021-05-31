@@ -1,7 +1,6 @@
-import { Box, Flex, Link as ThemeLink } from '@components';
+import { Box, Flex, Link as ThemeLink, Close } from '@components';
 import { routes } from '@config';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { Link } from 'react-router-dom';
 import React from 'react';
 import { useLocation } from 'react-router';
@@ -57,7 +56,7 @@ export const MobileMenu = ({
               mt: `1rem`,
             }}
           >
-            <FontAwesomeIcon icon={faTimes} size="2x" onClick={closeMenu} />
+            <Close onClick={closeMenu} sx={{ cursor: `pointer` }} />
           </Flex>
           <Flex sx={{ flexDirection: `column`, px: `40px` }}>
             {Object.keys(routes).map((idx) =>

@@ -3,8 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { Formik } from 'formik';
 import { ethers } from 'ethers';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { useWeb3React } from '@web3-react/core';
 import { InjectedConnector } from '@web3-react/injected-connector';
 
@@ -18,6 +16,7 @@ import {
   Link,
   Text,
   Button,
+  Close,
 } from '@components';
 import { useEagerConnect, useInactiveListener, useUnlock } from '@hooks';
 import { injected } from '@config';
@@ -94,12 +93,7 @@ export const UnlockModal = ({ closeModal }: { closeModal(): void }) => {
             zIndex: 999,
           }}
         >
-          <FontAwesomeIcon
-            icon={faTimes}
-            onClick={closeModal}
-            size="1x"
-            style={{ cursor: `pointer` }}
-          />
+          <Close onClick={closeModal} sx={{ cursor: `pointer` }} />
         </Box>
         {active ? (
           state === `unlocked` ? (

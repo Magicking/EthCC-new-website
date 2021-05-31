@@ -55,6 +55,9 @@ export const theme = {
         backgroundColor: `darkgrey`,
         outline: `1px solid slategrey`,
       },
+      li: {
+        mb: `2rem`,
+      },
     },
     a: {
       color: `text`,

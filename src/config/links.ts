@@ -7,3 +7,7 @@ export const STUDENT_APPLICATION = `https://docs.google.com/forms/d/e/1FAIpQLScL
 export const SPEAKER_APPLICATION = `https://docs.google.com/forms/d/e/1FAIpQLSel5GfooluMOI_rVhQs4dE2fJfs8632I1En7OoruGQ_AGax1g/viewform`;
 
 export const YAP_MAIL = `mailto:team@yapglobal.com`;
+
+export const VC_TRACK_VIRTUAL = `https://www.weezevent.com/ethvc2-ethcc4`;
+
+export const INVITES_MAIL = `mailto:elodie.demarchi@kaiko.com;hello@kaiko.com?cc=bettina@ethereum-france.com`;
