@@ -160,6 +160,14 @@ export const theme = {
         width: `100%`,
       },
     },
+    inverted: {
+      textDecoration: `none`,
+      color: `primary`,
+      transition: `.3s all ease-in-out`,
+      ':hover': {
+        color: `text`,
+      },
+    },
   },
   forms: {
     input: {

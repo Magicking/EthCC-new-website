@@ -1,9 +1,10 @@
+import { Container } from '@components';
 import React from 'react';
 
-const Bite = () => (
-  <main>
-    <p>Sorry, page not found!</p>
-  </main>
+const NotFound = () => (
+  <Container>
+    <p>404</p>
+  </Container>
 );
 
-export default Bite;
+export default NotFound;

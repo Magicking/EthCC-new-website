@@ -1,11 +1,4 @@
-interface Speaker {
-  firstname: string;
-  lastname: string;
-  company: string;
-  link: string;
-  picture: string;
-  isFeatured?: boolean;
-}
+import { Speaker } from '@types';
 
 export const SPEAKERS: Speaker[] = [
   {
