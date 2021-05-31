@@ -243,8 +243,7 @@ const EthVC = () => (
             >
               Free
             </Text>
-            {` `}
-            ​and you can apply by following the steps below:
+            and you can apply by following the steps below:
           </Text>
           <ol>
             <li>
@@ -257,7 +256,7 @@ const EthVC = () => (
                 >
                   Apply here
                 </Link>
-                ​&nbsp;to be a speaker during the event
+                to be a speaker during the event
               </Text>
             </li>
             <li>
@@ -304,15 +303,14 @@ const EthVC = () => (
                 Buy the “VC Track Virtual”
               </Link>
               {` `}
-              (virtual passes for up to 4 attendees): ​€799 ​(+tax) Buy ​=&gt;
-              ​here
+              (virtual passes for up to 4 attendees): €799 (+tax) Buy =&gt; here
             </li>
             <li>
               <Text>
-                VC Track “In person”​ (2 in-person passes + 2 virtual passes):
-                ​€1,499 ​(+ tax),{` `}
+                VC Track “In person” (2 in-person passes + 2 virtual passes):
+                €1,499 (+ tax),{` `}
                 <Link href={INVITES_MAIL} sx={{ textDecoration: `underline` }}>
-                  Invite Only​
+                  Invite Only
                 </Link>
               </Text>
             </li>

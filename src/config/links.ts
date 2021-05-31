@@ -6,8 +6,12 @@ export const STUDENT_APPLICATION = `https://docs.google.com/forms/d/e/1FAIpQLScL
 
 export const SPEAKER_APPLICATION = `https://docs.google.com/forms/d/e/1FAIpQLSel5GfooluMOI_rVhQs4dE2fJfs8632I1En7OoruGQ_AGax1g/viewform`;
 
+export const VOLONTEER_APPLICATION = `https://docs.google.com/forms/d/e/1FAIpQLScva1Muw7fxhhb-TipQgoHREoP1V4YuK8XYEpIrrIfCfpuRJg/viewform`;
+
 export const YAP_MAIL = `mailto:team@yapglobal.com`;
 
 export const VC_TRACK_VIRTUAL = `https://www.weezevent.com/ethvc2-ethcc4`;
 
 export const INVITES_MAIL = `mailto:elodie.demarchi@kaiko.com;hello@kaiko.com?cc=bettina@ethereum-france.com`;
+
+export const KYBER_PAYWALL = `https://widget.kyber.network/v0.8.0/?type=buy&mode=popup&lang=en&pinnedTokens=ETH_KNC_DAI&receiveToken=DAI&receiveAmount=350&paramForwarding=true&network=mainnet&theme=theme-dark`;
