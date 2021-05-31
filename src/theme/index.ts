@@ -51,9 +51,15 @@ export const theme = {
       scrollbar: {
         width: `1em`,
       },
-      scrollbarThumb: {
-        backgroundColor: `darkgrey`,
-        outline: `1px solid slategrey`,
+      '::-webkit-scrollbar': {
+        width: `10px`,
+      },
+      '::-webkit-scrollbar-track': {
+        background: `#e6e6e6`,
+        borderShadow: `none`,
+      },
+      '::-webkit-scrollbar-thumb': {
+        background: `#b30602`,
       },
       li: {
         mb: `2rem`,

@@ -1,9 +1,9 @@
-import { Container } from '@components';
+import { Container, Heading } from '@components';
 import React from 'react';
 
 const NotFound = () => (
-  <Container>
-    <p>404</p>
+  <Container sx={{ justifyContent: `center`, textAlign: `center` }}>
+    <Heading variant="bigHeading">404</Heading>
   </Container>
 );
 

@@ -12,6 +12,10 @@ export const Seo = () => (
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <meta
+      name="description"
+      content="Ethereum Community Conferences & Workshops: 20-21-22 July in Paris"
+    />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@EthCC" />
     <meta name="twitter:title" content="EthCC[4]" />
