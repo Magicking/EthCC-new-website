@@ -17,6 +17,11 @@
     "type": "git",
     "url": ""
   },
+  "engines": {
+    "node": "14.17.0",
+    "npm": ">= 6.14.13",
+    "yarn": ">= 1.22.10"
+  },
   "keywords": [],
   "devDependencies": {
     "@babel/core": "^7.12.16",
