@@ -75,7 +75,7 @@ export const theme = {
   },
   layout: {
     container: {
-      my: `10em`,
+      my: `5em`,
       display: `flex`,
       flexDirection: `column`,
       px: `15px`,

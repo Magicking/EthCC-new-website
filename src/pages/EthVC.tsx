@@ -1,6 +1,14 @@
 import React from 'react';
 
-import { Container, Flex, Heading, Image, Text, Link } from '@components';
+import {
+  Container,
+  Flex,
+  Heading,
+  Image,
+  Text,
+  Link,
+  Accordion,
+} from '@components';
 
 import kaiko from '@assets/kaiko.png';
 import { INVITES_MAIL, SPEAKER_APPLICATION, VC_TRACK_VIRTUAL } from '@config';
@@ -16,7 +24,7 @@ const EthVC = () => (
           sx={{
             flexDirection: `row`,
             alignItems: `center`,
-            mt: `3rem`,
+
             mb: `20px`,
           }}
         >
@@ -317,6 +325,69 @@ const EthVC = () => (
           </ul>
         </Flex>
       </Flex>
+      <Accordion
+        content={[
+          {
+            title: (
+              <Heading sx={{ fontSize: `1.75rem` }}>
+                <Text
+                  sx={{
+                    textTransform: `uppercase`,
+                    color: `primary`,
+                    fontStyle: `italic`,
+                  }}
+                >
+                  Why
+                </Text>
+                {` `}a VC track during EthCC ?
+              </Heading>
+            ),
+            content: (
+              <Text>
+                We aim to bridge the gap between VCs wishing to better
+                understand the technology and discover groundbreaking projects,
+                and blockchain projects/companies searching for funding, but
+                with little VC network and access. The “EthVC Track” is a unique
+                opportunity for VCs and carefully selected blockchain-based
+                projects to meet and exchange over an intense 3-day program.
+              </Text>
+            ),
+          },
+          {
+            title: (
+              <Heading sx={{ fontSize: `1.75rem` }}>
+                <Text
+                  sx={{
+                    textTransform: `uppercase`,
+                    color: `primary`,
+                    fontStyle: `italic`,
+                  }}
+                >
+                  What
+                </Text>
+                {` `}is the VC track?
+              </Heading>
+            ),
+            content: (
+              <Text>
+                On the 1st Day of the conference (July 20th), investors will
+                have access to the numerous conferences, including workshops
+                addressed to the neophytes wishing to learn fast about
+                blockchain and Ethereum, as well as talks led by the start-ups
+                that will be pitching on the VC stage. On Days 2 and 3 (July
+                21st & 22nd): VCs have access to a dedicated Pitch Room where
+                selected startups will pitch their project to our community of
+                investors- for the sake of efficiency and confidentiality, the
+                Pitch Room will only be available to registered members with a
+                VC Track Pass. The Pitch Room schedule will be shared ahead of
+                the event, along with company details, short abstract, CEO
+                profile, and fundraising asks. There will be both equity based
+                and token based projects
+              </Text>
+            ),
+          },
+        ]}
+      />
     </Container>
   </main>
 );

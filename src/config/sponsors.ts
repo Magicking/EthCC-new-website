@@ -16,111 +16,137 @@ import starkware from '@assets/sponsors/starkware.png';
 import cometh from '@assets/sponsors/cometh.png';
 import kaiko from '@assets/sponsors/kaiko.png';
 
+interface SponsorGroup {
+  size: number;
+  content: Sponsor[];
+}
 interface Sponsor {
   name: string;
   picture: string;
   link: string;
+  zoom?: number;
 }
 
-export const GOLD: Sponsor[] = [
-  {
-    name: `Anoma`,
-    picture: anoma,
-    link: `https://anoma.network/`,
-  },
-];
+export const GOLD: SponsorGroup = {
+  size: 300,
+  content: [
+    {
+      name: `Anoma`,
+      picture: anoma,
+      link: `https://anoma.network/`,
+    },
+  ],
+};
 
-export const SILVER: Sponsor[] = [
-  {
-    name: `Aave`,
-    picture: aave,
-    link: `https://aave.com/`,
-  },
-  {
-    name: `Ledger`,
-    picture: ledger,
-    link: `https://www.ledger.com/`,
-  },
-  {
-    name: `Status`,
-    picture: status,
-    link: `https://status.im/`,
-  },
-  {
-    name: `John`,
-    picture: john,
-    link: `https://twitter.com/JohnLilic`,
-  },
-];
+export const SILVER: SponsorGroup = {
+  size: 250,
+  content: [
+    {
+      name: `Aave`,
+      picture: aave,
+      link: `https://aave.com/`,
+    },
+    {
+      name: `Ledger`,
+      picture: ledger,
+      link: `https://www.ledger.com/`,
+    },
+    {
+      name: `Status`,
+      picture: status,
+      link: `https://status.im/`,
+    },
+    {
+      name: `John`,
+      picture: john,
+      link: `https://twitter.com/JohnLilic`,
+    },
+  ],
+};
 
-export const BRONZE: Sponsor[] = [
-  {
-    name: `Api3`,
-    picture: api3,
-    link: `https://api3.org/`,
-  },
-  {
-    name: `Paraswap`,
-    picture: paraswap,
-    link: `https://paraswap.io/`,
-  },
-  {
-    name: `Hermez`,
-    picture: hermez,
-    link: `https://hermez.io/`,
-  },
-  {
-    name: `Raiden`,
-    picture: raiden,
-    link: `https://raiden.network/`,
-  },
-  {
-    name: `Witnet`,
-    picture: witnet,
-    link: `https://witnet.io/`,
-  },
-];
+export const BRONZE: SponsorGroup = {
+  size: 200,
+  content: [
+    {
+      name: `Api3`,
+      picture: api3,
+      link: `https://api3.org/`,
+      zoom: 1.5,
+    },
+    {
+      name: `Paraswap`,
+      picture: paraswap,
+      link: `https://paraswap.io/`,
+    },
+    {
+      name: `Hermez`,
+      picture: hermez,
+      link: `https://hermez.io/`,
+    },
+    {
+      name: `Raiden`,
+      picture: raiden,
+      link: `https://raiden.network/`,
+    },
+    {
+      name: `Witnet`,
+      picture: witnet,
+      link: `https://witnet.io/`,
+      zoom: 1.4,
+    },
+  ],
+};
 
-export const IRON: Sponsor[] = [
-  {
-    name: `Hopr`,
-    picture: hopr,
-    link: `https://hoprnet.org/`,
-  },
-  {
-    name: `Arcadia`,
-    picture: arcadia,
-    link: `https://arcadiamgroup.com/`,
-  },
-];
+export const IRON: SponsorGroup = {
+  size: 150,
+  content: [
+    {
+      name: `Hopr`,
+      picture: hopr,
+      link: `https://hoprnet.org/`,
+    },
+    {
+      name: `Arcadia`,
+      picture: arcadia,
+      link: `https://arcadiamgroup.com/`,
+      zoom: 1.5,
+    },
+  ],
+};
 
-export const COPPER: Sponsor[] = [
-  {
-    name: `Audius`,
-    picture: audius,
-    link: `https://audius.co/`,
-  },
-  {
-    name: `Kleros`,
-    picture: kleros,
-    link: `https://kleros.io/`,
-  },
-  {
-    name: `Starkware`,
-    picture: starkware,
-    link: `https://starkware.co/`,
-  },
-  {
-    name: `Cometh`,
-    picture: cometh,
-    link: `https://cometh.io/`,
-  },
-  {
-    name: `kaiko`,
-    picture: kaiko,
-    link: `https://kaiko.com/`,
-  },
-];
+export const COPPER: SponsorGroup = {
+  size: 100,
+  content: [
+    {
+      name: `Audius`,
+      picture: audius,
+      link: `https://audius.co/`,
+    },
+    {
+      name: `Kleros`,
+      picture: kleros,
+      link: `https://kleros.io/`,
+    },
+    {
+      name: `Starkware`,
+      picture: starkware,
+      link: `https://starkware.co/`,
+      zoom: 1.3,
+    },
+    {
+      name: `Cometh`,
+      picture: cometh,
+      link: `https://cometh.io/`,
+      zoom: 1.2,
+    },
+    {
+      name: `kaiko`,
+      picture: kaiko,
+      link: `https://kaiko.com/`,
+      zoom: 1.5,
+    },
+  ],
+};
 
 export const SPONSORS = {
   GOLD,

@@ -16,11 +16,9 @@ const Speakers = () => (
     <Container sx={{ mt: `5em` }}>
       <Flex sx={{ width: [`100%`, null, `70%`], flexDirection: `column` }}>
         <Heading as="h1" variant="bigHeading" sx={{ mb: `1.5rem` }}>
-          EthCC [4] Speakers
+          EthCC[4] Speakers
         </Heading>
-        <Text
-          sx={{ color: `primary`, fontSize: `1.7rem`, mt: `3rem`, mb: `20px` }}
-        >
+        <Text sx={{ color: `primary`, fontSize: `1.7rem`, mb: `20px` }}>
           Become an EthCC speaker
         </Text>
         <Flex>

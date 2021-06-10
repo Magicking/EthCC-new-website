@@ -8,6 +8,7 @@ import {
   UnlockModal,
   Image,
   Link,
+  Maccaron,
 } from '@components';
 import { useTimeLeft } from '@hooks';
 import {
@@ -19,6 +20,8 @@ import {
   PARTNERS,
   SPONSORS,
   YAP_MAIL,
+  COMMUNITY,
+  MEDIA,
 } from '@config';
 
 import communityPic from '@assets/community_pic.png';
@@ -249,20 +252,8 @@ const Home = () => {
             flexWrap: `wrap`,
           }}
         >
-          {PARTNERS.map((sponsor) => (
-            <Link
-              href={sponsor.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              key={sponsor.name}
-            >
-              <Image
-                src={sponsor.picture}
-                alt={sponsor.name}
-                width="300px"
-                sx={{ mr: `80px`, maxHeight: `480px` }}
-              />
-            </Link>
+          {PARTNERS.map((partner) => (
+            <Maccaron {...partner} size={150} />
           ))}
         </Flex>
       </Container>
@@ -273,30 +264,22 @@ const Home = () => {
 
         {Object.keys(SPONSORS).map((level) => (
           <Flex sx={{ flexDirection: `column` }} key={level}>
-            <Heading
-              variant="subHeading"
-              sx={{ fontSize: `1.75rem` }}
-            >{`${level} Sponsors`}</Heading>
             <Flex
               sx={{
                 mb: `3rem`,
                 mt: `1.75rem`,
                 flexDirection: [`column`, null, `row`],
+                alignItems: `center`,
+                flexWrap: `wrap`,
+                justifyContent: `center`,
               }}
             >
-              {SPONSORS[level].map((sponsor) => (
-                <Link
+              {SPONSORS[level].content.map((sponsor) => (
+                <Maccaron
+                  {...sponsor}
                   key={sponsor.name}
-                  href={sponsor.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src={sponsor.picture}
-                    alt={sponsor.name}
-                    sx={{ maxWidth: `150px`, maxHeight: `200px` }}
-                  />
-                </Link>
+                  size={SPONSORS[level].size}
+                />
               ))}
             </Flex>
           </Flex>
@@ -304,7 +287,35 @@ const Home = () => {
       </Container>
       <Container>
         <Flex sx={{ mb: `3rem` }}>
+          <Heading variant="title">Community</Heading>
+        </Flex>
+        <Flex
+          sx={{
+            flexDirection: [`column`, null, `row`],
+            alignItems: `center`,
+            flexWrap: `wrap`,
+          }}
+        >
+          {COMMUNITY.map((item) => (
+            <Maccaron {...item} key={item.name} size={150} />
+          ))}
+        </Flex>
+      </Container>
+      <Container>
+        <Flex sx={{ mb: `3rem` }}>
           <Heading variant="title">Media</Heading>
+        </Flex>
+        <Flex
+          sx={{
+            flexDirection: [`column`, null, `row`],
+            alignItems: `center`,
+            flexWrap: `wrap`,
+            pb: `2rem`,
+          }}
+        >
+          {MEDIA.map((item) => (
+            <Maccaron {...item} key={item.name} size={150} />
+          ))}
         </Flex>
         <Flex>
           <Link variant="primary" href={YAP_MAIL}>

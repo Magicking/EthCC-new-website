@@ -182,12 +182,12 @@ const Tickets = () => {
               flexDirection: `column`,
               alignItems: `center`,
               border: `2px solid`,
-              borderColor: `text`,
+              borderColor: `primary`,
               padding: `30px`,
               width: [`80%`, null, `40%`],
               mx: `auto`,
               ':hover': {
-                borderColor: `primary`,
+                borderColor: `text`,
               },
             }}
           >

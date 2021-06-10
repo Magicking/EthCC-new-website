@@ -63,7 +63,7 @@ export const Header = () => {
                   '&:hover': { color: `primary` },
                 }}
               >
-                EthCC <Text sx={{ color: `primary` }}>[4]</Text>
+                EthCC<Text sx={{ color: `primary` }}>[4]</Text>
               </Heading>
             </Link>
           </Flex>
