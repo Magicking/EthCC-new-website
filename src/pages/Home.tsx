@@ -20,7 +20,6 @@ import {
   PARTNERS,
   SPONSORS,
   YAP_MAIL,
-  COMMUNITY,
   MEDIA,
 } from '@config';
 
@@ -242,23 +241,6 @@ const Home = () => {
       </Container>
       <Container>
         <Flex sx={{ mb: `3rem` }}>
-          <Heading variant="title">Partners</Heading>
-        </Flex>
-        <Flex
-          sx={{
-            flexDirection: [`column`, null, `row`],
-            alignItems: `center`,
-            justifyContent: [`center`, null, `normal`],
-            flexWrap: `wrap`,
-          }}
-        >
-          {PARTNERS.map((partner) => (
-            <Maccaron {...partner} size={150} />
-          ))}
-        </Flex>
-      </Container>
-      <Container>
-        <Flex sx={{ mb: `3rem` }}>
           <Heading variant="title">Sponsors</Heading>
         </Flex>
 
@@ -287,17 +269,18 @@ const Home = () => {
       </Container>
       <Container>
         <Flex sx={{ mb: `3rem` }}>
-          <Heading variant="title">Community</Heading>
+          <Heading variant="title">Partners</Heading>
         </Flex>
         <Flex
           sx={{
             flexDirection: [`column`, null, `row`],
             alignItems: `center`,
+            justifyContent: [`center`, null, `normal`],
             flexWrap: `wrap`,
           }}
         >
-          {COMMUNITY.map((item) => (
-            <Maccaron {...item} key={item.name} size={150} />
+          {PARTNERS.map((partner) => (
+            <Maccaron {...partner} size={150} />
           ))}
         </Flex>
       </Container>
