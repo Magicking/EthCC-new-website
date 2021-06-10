@@ -49,7 +49,7 @@ export const Maccaron = ({
         sx={{
           maxWidth: `${size * 0.58}px`,
           maxHeight: `${size * 0.58}px`,
-          transform: `scale(${zoom ? zoom : '1'})`,
+          transform: `scale(${zoom || `1`})`,
         }}
       />
     </Flex>

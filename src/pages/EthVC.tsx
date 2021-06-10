@@ -41,300 +41,16 @@ const EthVC = () => (
       </Flex>
     </Container>
     <Container>
-      <Flex sx={{ flexDirection: `column`, mb: `3rem`, mx: `15px` }}>
-        <Heading sx={{ fontSize: `1.75rem` }}>
-          <Text
-            sx={{
-              textTransform: `uppercase`,
-              color: `primary`,
-              fontStyle: `italic`,
-            }}
-          >
-            Why
-          </Text>
-          {` `}a VC track during EthCC ?
-        </Heading>
-        <Text>
-          We aim to bridge the gap between VCs wishing to better understand the
-          technology and discover groundbreaking projects, and blockchain
-          projects/companies searching for funding, but with little VC network
-          and access. The “EthVC Track” is a unique opportunity for VCs and
-          carefully selected blockchain-based projects to meet and exchange over
-          an intense 3-day program.
-        </Text>
-      </Flex>
-      <Flex sx={{ flexDirection: `column`, mb: `3rem`, mx: `15px` }}>
-        <Heading sx={{ fontSize: `1.75rem` }}>
-          <Text
-            sx={{
-              textTransform: `uppercase`,
-              color: `primary`,
-              fontStyle: `italic`,
-            }}
-          >
-            What
-          </Text>
-          {` `}is the VC track?
-        </Heading>
-        <Text>
-          On the 1st Day of the conference (July 20th), investors will have
-          access to the numerous conferences, including workshops addressed to
-          the neophytes wishing to learn fast about blockchain and Ethereum, as
-          well as talks led by the start-ups that will be pitching on the VC
-          stage. On Days 2 and 3 (July 21st & 22nd): VCs have access to a
-          dedicated Pitch Room where selected startups will pitch their project
-          to our community of investors- for the sake of efficiency and
-          confidentiality, the Pitch Room will only be available to registered
-          members with a VC Track Pass. The Pitch Room schedule will be shared
-          ahead of the event, along with company details, short abstract, CEO
-          profile, and fundraising asks. There will be both equity based and
-          token based projects
-        </Text>
-      </Flex>
-      <Flex sx={{ flexDirection: [`column`, null, `row`] }}>
-        <Flex
-          sx={{
-            flexDirection: `column`,
-            flex: [null, null, `0 0 50%`],
-            mx: `15px`,
-          }}
-        >
-          <Heading sx={{ fontSize: `1.75rem` }}>
-            <Text
-              sx={{
-                textTransform: `uppercase`,
-                color: `primary`,
-                fontStyle: `italic`,
-              }}
-            >
-              Quality
-            </Text>
-            {` `} - Our core value
-          </Heading>
-          <Text>The VC Track Pass ensures investors:</Text>
-          <ul>
-            <li>
-              <Text>
-                <Text sx={{ fontWeight: `bold` }}>Quality of the projects</Text>
-                {` `}
-                (qualified deal flow): all presenting startups need to have at
-                least a separate talk or workshop accepted in the EthCC[4]
-                program as a prerequisite to pitch.
-              </Text>
-            </li>
-            <li>
-              <Text>
-                <Text sx={{ fontWeight: `bold` }}>
-                  Pre-validation of technology
-                </Text>
-                {` `}
-                and founder’s expertise: all presenting startups have been
-                screened and selected by our technical team.
-              </Text>
-            </li>
-            <li>
-              <Text>
-                <Text sx={{ fontWeight: `bold` }}>
-                  Deeper dive into companies:
-                </Text>
-                {` `}
-                opportunity to efficiently know the team and tech better by
-                attending technical workshops and meet the other team members
-                (i.e. CEO’s pitch & CTO’s workshop).
-              </Text>
-            </li>
-            <li>
-              <Text>
-                <Text sx={{ fontWeight: `bold` }}>Access to the community</Text>
-                {` `}
-                (stay abreast of new trends and relevant events): you will
-                become part of the community and have access to all related
-                EthCC events and curated content.
-              </Text>
-            </li>
-          </ul>
-        </Flex>
-        <Flex
-          sx={{
-            flexDirection: `column`,
-            flex: [null, null, `0 0 50%`],
-            mx: `15px`,
-          }}
-        >
-          <Heading sx={{ fontSize: `1.75rem` }}>
-            <Text
-              sx={{
-                textTransform: `uppercase`,
-                color: `primary`,
-                fontStyle: `italic`,
-              }}
-            >
-              Benefits
-            </Text>
-            {` `} - What we will deliver
-          </Heading>
-          <Text>The VC Track Pass includes:</Text>
-          <ul>
-            <li>
-              <Text>
-                <Text sx={{ fontWeight: `bold` }}>
-                  Full access to the three days of conferences
-                </Text>
-                {` `}
-                including all tracks (Scalability, Development tools,
-                Governance, Privacy, Crypto Economics, etc.).
-              </Text>
-            </li>
-            <li>
-              <Text>
-                <Text sx={{ fontWeight: `bold` }}>A VC Track booklet</Text>
-                {` `}
-                with clear schedule of all startup pitches, organised by
-                fundraising type (equity-based vs. token based).
-              </Text>
-            </li>
-            <li>
-              <Text>
-                <Text sx={{ fontWeight: `bold` }}>
-                  Exclusive access to the Pitch Room
-                </Text>
-                {` `}
-                where startups will pitch their project/company.
-              </Text>
-            </li>
-            <li>
-              <Text>
-                <Text sx={{ fontWeight: `bold` }}>
-                  Access to all pitch decks
-                </Text>
-                {` `}
-                in electronic format
-              </Text>
-            </li>
-            <li>
-              <Text>
-                <Text sx={{ fontWeight: `bold` }}>
-                  Access to the founders directory
-                </Text>
-                {` `}
-                and contact details.
-              </Text>
-            </li>
-          </ul>
-        </Flex>
-      </Flex>
-    </Container>
-    <Container>
-      <Flex sx={{ flexDirection: [`column`, null, `row`] }}>
-        <Flex sx={{ flexDirection: `column`, flex: `0 0 50%`, mx: `15px` }}>
-          <Flex sx={{ mb: `2rem` }}>
-            <Heading sx={{ ':after': { left: 0 } }} variant="title">
-              Startups
-            </Heading>
-          </Flex>
-          <Text sx={{ mb: `2rem` }}>
-            You are a{` `}
-            <Text sx={{ color: `primary`, fontWeight: `bold` }}>
-              Blockchain Startup
-            </Text>
-            ? You are fundraising and you want to get advice from experts and
-            pitch in front of awesome VCs?
-          </Text>
-          <Text>
-            It is{` `}
-            <Text
-              sx={{
-                color: `primary`,
-                fontWeight: `bold`,
-                textTransform: `uppercase`,
-              }}
-            >
-              Free
-            </Text>
-            and you can apply by following the steps below:
-          </Text>
-          <ol>
-            <li>
-              <Text>
-                <Link
-                  sx={{ textDecoration: `underline` }}
-                  href={SPEAKER_APPLICATION}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Apply here
-                </Link>
-                to be a speaker during the event
-              </Text>
-            </li>
-            <li>
-              <Text>
-                If selected, we will send you a questionnaire to get to know
-                more about you
-              </Text>
-            </li>
-            <li>
-              <Text>
-                Get 1:1 workshop during EthCC conference with experts to help
-                you refine your deck and pitch
-              </Text>
-            </li>
-            <li>
-              <Text>
-                Pitch and connect with VCs =&gt; increased chance to accelerate
-                your success!
-              </Text>
-            </li>
-          </ol>
-        </Flex>
-        <Flex
-          sx={{
-            flexDirection: `column`,
-            flex: `0 0 50%`,
-            mx: `15px`,
-            mb: [`3rem`, null, 0],
-          }}
-        >
-          <Flex sx={{ mb: `2rem` }}>
-            <Heading sx={{ ':after': { left: 0 } }} variant="title">
-              Investors
-            </Heading>
-          </Flex>
-          <ul>
-            <li>
-              <Link
-                sx={{ textDecoration: `underline` }}
-                href={VC_TRACK_VIRTUAL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Buy the “VC Track Virtual”
-              </Link>
-              {` `}
-              (virtual passes for up to 4 attendees): €799 (+tax) Buy =&gt; here
-            </li>
-            <li>
-              <Text>
-                VC Track “In person” (2 in-person passes + 2 virtual passes):
-                €1,499 (+ tax),{` `}
-                <Link href={INVITES_MAIL} sx={{ textDecoration: `underline` }}>
-                  Invite Only
-                </Link>
-              </Text>
-            </li>
-          </ul>
-        </Flex>
-      </Flex>
       <Accordion
         content={[
           {
             title: (
-              <Heading sx={{ fontSize: `1.75rem` }}>
+              <Heading sx={{ fontSize: [`1.1rem`, null, `1.5rem`] }}>
                 <Text
                   sx={{
                     textTransform: `uppercase`,
                     color: `primary`,
-                    fontStyle: `italic`,
+                    fontWeight: `500`,
                   }}
                 >
                   Why
@@ -355,12 +71,12 @@ const EthVC = () => (
           },
           {
             title: (
-              <Heading sx={{ fontSize: `1.75rem` }}>
+              <Heading sx={{ fontSize: [`1.1rem`, null, `1.5rem`] }}>
                 <Text
                   sx={{
                     textTransform: `uppercase`,
                     color: `primary`,
-                    fontStyle: `italic`,
+                    fontWeight: `500`,
                   }}
                 >
                   What
@@ -384,6 +100,265 @@ const EthVC = () => (
                 profile, and fundraising asks. There will be both equity based
                 and token based projects
               </Text>
+            ),
+          },
+          {
+            title: (
+              <Heading sx={{ fontSize: [`1.1rem`, null, `1.5rem`] }}>
+                <Text
+                  sx={{
+                    textTransform: `uppercase`,
+                    color: `primary`,
+                    fontWeight: `500`,
+                  }}
+                >
+                  Quality
+                </Text>
+                {` `} - Our core value
+              </Heading>
+            ),
+            content: (
+              <Flex sx={{ flexDirection: `column` }}>
+                <Text>The VC Track Pass ensures investors:</Text>
+                <ul>
+                  <li>
+                    <Text>
+                      <Text sx={{ fontWeight: `bold` }}>
+                        Quality of the projects
+                      </Text>
+                      {` `}
+                      (qualified deal flow): all presenting startups need to
+                      have at least a separate talk or workshop accepted in the
+                      EthCC[4] program as a prerequisite to pitch.
+                    </Text>
+                  </li>
+                  <li>
+                    <Text>
+                      <Text sx={{ fontWeight: `bold` }}>
+                        Pre-validation of technology
+                      </Text>
+                      {` `}
+                      and founder’s expertise: all presenting startups have been
+                      screened and selected by our technical team.
+                    </Text>
+                  </li>
+                  <li>
+                    <Text>
+                      <Text sx={{ fontWeight: `bold` }}>
+                        Deeper dive into companies:
+                      </Text>
+                      {` `}
+                      opportunity to efficiently know the team and tech better
+                      by attending technical workshops and meet the other team
+                      members (i.e. CEO’s pitch & CTO’s workshop).
+                    </Text>
+                  </li>
+                  <li>
+                    <Text>
+                      <Text sx={{ fontWeight: `bold` }}>
+                        Access to the community
+                      </Text>
+                      {` `}
+                      (stay abreast of new trends and relevant events): you will
+                      become part of the community and have access to all
+                      related EthCC events and curated content.
+                    </Text>
+                  </li>
+                </ul>
+              </Flex>
+            ),
+          },
+          {
+            title: (
+              <Heading sx={{ fontSize: [`1.1rem`, null, `1.5rem`] }}>
+                <Text
+                  sx={{
+                    textTransform: `uppercase`,
+                    color: `primary`,
+                    fontWeight: `500`,
+                  }}
+                >
+                  Benefits
+                </Text>
+                {` `} - What we will deliver
+              </Heading>
+            ),
+            content: (
+              <Flex sx={{ flexDirection: `column` }}>
+                <Text>The VC Track Pass includes:</Text>
+                <ul>
+                  <li>
+                    <Text>
+                      <Text sx={{ fontWeight: `bold` }}>
+                        Full access to the three days of conferences
+                      </Text>
+                      {` `}
+                      including all tracks (Scalability, Development tools,
+                      Governance, Privacy, Crypto Economics, etc.).
+                    </Text>
+                  </li>
+                  <li>
+                    <Text>
+                      <Text sx={{ fontWeight: `bold` }}>
+                        A VC Track booklet
+                      </Text>
+                      {` `}
+                      with clear schedule of all startup pitches, organised by
+                      fundraising type (equity-based vs. token based).
+                    </Text>
+                  </li>
+                  <li>
+                    <Text>
+                      <Text sx={{ fontWeight: `bold` }}>
+                        Exclusive access to the Pitch Room
+                      </Text>
+                      {` `}
+                      where startups will pitch their project/company.
+                    </Text>
+                  </li>
+                  <li>
+                    <Text>
+                      <Text sx={{ fontWeight: `bold` }}>
+                        Access to all pitch decks
+                      </Text>
+                      {` `}
+                      in electronic format
+                    </Text>
+                  </li>
+                  <li>
+                    <Text>
+                      <Text sx={{ fontWeight: `bold` }}>
+                        Access to the founders directory
+                      </Text>
+                      {` `}
+                      and contact details.
+                    </Text>
+                  </li>
+                </ul>
+              </Flex>
+            ),
+          },
+          {
+            title: (
+              <Heading sx={{ fontSize: [`1.1rem`, null, `1.5rem`] }}>
+                I&apos;m a
+                <Text
+                  sx={{
+                    textTransform: `uppercase`,
+                    color: `primary`,
+                    fontWeight: `500`,
+                  }}
+                >
+                  {` `}
+                  Startup
+                </Text>
+              </Heading>
+            ),
+            content: (
+              <Flex sx={{ flexDirection: `column` }}>
+                <Text sx={{ mb: `2rem` }}>
+                  You are a{` `}
+                  <Text sx={{ color: `primary`, fontWeight: `bold` }}>
+                    Blockchain Startup
+                  </Text>
+                  ? You are fundraising and you want to get advice from experts
+                  and pitch in front of awesome VCs?
+                </Text>
+                <Text>
+                  It is{` `}
+                  <Text
+                    sx={{
+                      color: `primary`,
+                      fontWeight: `bold`,
+                      textTransform: `uppercase`,
+                    }}
+                  >
+                    Free
+                  </Text>
+                  and you can apply by following the steps below:
+                </Text>
+                <ol>
+                  <li>
+                    <Text>
+                      <Link
+                        sx={{ textDecoration: `underline` }}
+                        href={SPEAKER_APPLICATION}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Apply here
+                      </Link>
+                      to be a speaker during the event
+                    </Text>
+                  </li>
+                  <li>
+                    <Text>
+                      If selected, we will send you a questionnaire to get to
+                      know more about you
+                    </Text>
+                  </li>
+                  <li>
+                    <Text>
+                      Get 1:1 workshop during EthCC conference with experts to
+                      help you refine your deck and pitch
+                    </Text>
+                  </li>
+                  <li>
+                    <Text>
+                      Pitch and connect with VCs =&gt; increased chance to
+                      accelerate your success!
+                    </Text>
+                  </li>
+                </ol>
+              </Flex>
+            ),
+          },
+          {
+            title: (
+              <Heading sx={{ fontSize: [`1.1rem`, null, `1.5rem`] }}>
+                I&apos;m an
+                <Text
+                  sx={{
+                    textTransform: `uppercase`,
+                    color: `primary`,
+                    fontWeight: `500`,
+                  }}
+                >
+                  {` `}
+                  Investor
+                </Text>
+              </Heading>
+            ),
+            content: (
+              <Flex sx={{ flexDirection: `column` }}>
+                <ul>
+                  <li>
+                    <Link
+                      sx={{ textDecoration: `underline` }}
+                      href={VC_TRACK_VIRTUAL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Buy the “VC Track Virtual”
+                    </Link>
+                    {` `}
+                    (virtual passes for up to 4 attendees): €799 (+tax) Buy
+                    =&gt; here
+                  </li>
+                  <li>
+                    <Text>
+                      VC Track “In person” (2 in-person passes + 2 virtual
+                      passes): €1,499 (+ tax),{` `}
+                      <Link
+                        href={INVITES_MAIL}
+                        sx={{ textDecoration: `underline` }}
+                      >
+                        Invite Only
+                      </Link>
+                    </Text>
+                  </li>
+                </ul>
+              </Flex>
             ),
           },
         ]}
