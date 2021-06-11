@@ -8,10 +8,7 @@ export const Seo = () => (
   <Helmet>
     <title>EthCC 4 &mdash; July 20-22, 2021</title>
     <meta charSet="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Ethereum Community Conferences & Workshops: 20-21-22 July in Paris"

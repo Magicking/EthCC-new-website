@@ -1,4 +1,5 @@
 import aave from '@assets/sponsors/aave.png';
+import yap from '@assets/partners/yap.png';
 import audius from '@assets/sponsors/audius.png';
 import ledger from '@assets/sponsors/ledger.png';
 import status from '@assets/sponsors/status.png';
@@ -34,6 +35,7 @@ export const GOLD: SponsorGroup = {
       name: `Anoma`,
       picture: anoma,
       link: `https://anoma.network/`,
+      zoom: 1.25,
     },
   ],
 };
@@ -45,21 +47,31 @@ export const SILVER: SponsorGroup = {
       name: `Aave`,
       picture: aave,
       link: `https://aave.com/`,
+      zoom: 1.2,
     },
     {
       name: `Ledger`,
       picture: ledger,
       link: `https://www.ledger.com/`,
+      zoom: 1.4,
     },
     {
       name: `Status`,
       picture: status,
       link: `https://status.im/`,
+      zoom: 1.4,
     },
     {
       name: `John`,
       picture: john,
       link: `https://twitter.com/JohnLilic`,
+      zoom: 1.2,
+    },
+    {
+      name: `Yap`,
+      picture: yap,
+      link: `http://www.yapglobal.com/`,
+      zoom: 1.2,
     },
   ],
 };

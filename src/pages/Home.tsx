@@ -9,6 +9,7 @@ import {
   Image,
   Link,
   Maccaron,
+  Box,
 } from '@components';
 import { useTimeLeft } from '@hooks';
 import {
@@ -20,7 +21,6 @@ import {
   PARTNERS,
   SPONSORS,
   YAP_MAIL,
-  COMMUNITY,
   MEDIA,
 } from '@config';
 
@@ -181,11 +181,16 @@ const Home = () => {
               </Link>
             </Text>
           </Flex>
-          <Flex
+          <Box
             sx={{ flex: `0 0 50%`, px: `15px`, mb: [`3rem`, null, `inherit`] }}
           >
-            <Image src={communityPic} width="100%" alt="community pic" />
-          </Flex>
+            <Image
+              src={communityPic}
+              width="100%"
+              height="auto"
+              alt="community pic"
+            />
+          </Box>
         </Flex>
       </Container>
       <Container>
@@ -195,7 +200,7 @@ const Home = () => {
         <Flex sx={{ flexDirection: [`column`, null, `row`] }}>
           <Flex sx={{ flex: `0 0 50%`, flexWrap: `wrap` }}>
             {SPEAKERS.slice(0, 6).map((speaker) => (
-              <Flex
+              <Box
                 sx={{ width: `150px`, mx: `auto`, mt: `3rem` }}
                 key={`${speaker.firstname}-${speaker.lastname}`}
               >
@@ -206,9 +211,11 @@ const Home = () => {
                     borderColor: `primary`,
                   }}
                   src={speaker.picture}
+                  width="150px"
+                  height="150px"
                   alt={`${speaker.firstname} ${speaker.lastname}`}
                 />
-              </Flex>
+              </Box>
             ))}
           </Flex>
           <Flex
@@ -242,23 +249,6 @@ const Home = () => {
       </Container>
       <Container>
         <Flex sx={{ mb: `3rem` }}>
-          <Heading variant="title">Partners</Heading>
-        </Flex>
-        <Flex
-          sx={{
-            flexDirection: [`column`, null, `row`],
-            alignItems: `center`,
-            justifyContent: [`center`, null, `normal`],
-            flexWrap: `wrap`,
-          }}
-        >
-          {PARTNERS.map((partner) => (
-            <Maccaron {...partner} size={150} />
-          ))}
-        </Flex>
-      </Container>
-      <Container>
-        <Flex sx={{ mb: `3rem` }}>
           <Heading variant="title">Sponsors</Heading>
         </Flex>
 
@@ -287,17 +277,18 @@ const Home = () => {
       </Container>
       <Container>
         <Flex sx={{ mb: `3rem` }}>
-          <Heading variant="title">Community</Heading>
+          <Heading variant="title">Partners</Heading>
         </Flex>
         <Flex
           sx={{
             flexDirection: [`column`, null, `row`],
             alignItems: `center`,
+            justifyContent: [`center`, null, `normal`],
             flexWrap: `wrap`,
           }}
         >
-          {COMMUNITY.map((item) => (
-            <Maccaron {...item} key={item.name} size={150} />
+          {PARTNERS.map((partner) => (
+            <Maccaron {...partner} size={150} />
           ))}
         </Flex>
       </Container>
