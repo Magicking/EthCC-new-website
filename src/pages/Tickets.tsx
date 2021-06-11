@@ -16,7 +16,7 @@ const Tickets = () => {
       <Container sx={{ mt: `5em` }}>
         <Flex sx={{ width: [`100%`, null, `70%`], flexDirection: `column` }}>
           <Heading as="h1" variant="bigHeading" sx={{ mb: `1.5rem` }}>
-            EthCC [4] Tickets
+            EthCC[4] Tickets
           </Heading>
         </Flex>
       </Container>
