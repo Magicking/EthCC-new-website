@@ -786,7 +786,7 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Amira_Bouguera.jpg`,
   },
   {
-    company: `https://web3api.dev`,
+    company: `Web3api`,
     firstname: `Jordan`,
     lastname: `Ellis`,
     link: `https://twitter.com/Web3API`,
@@ -905,7 +905,7 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Marek_Olszewski.jpg`,
   },
   {
-    company: `https://cosmos.network/`,
+    company: `Cosmos`,
     firstname: `Peng`,
     lastname: `Zhong`,
     link: `https://twitter.com/zcpeng`,
@@ -925,6 +925,13 @@ export const SPEAKERS: Speaker[] = [
     lastname: `Burke`,
     link: `https://twitter.com/jamie247`,
     picture: `/speakers/Jamie_Burke.jpg`,
+  },
+  {
+    company: `Travala`,
+    firstname: `Juan`,
+    lastname: `Otero`,
+    link: `https://twitter.com/joterovila`,
+    picture: `/speakers/Juan_Otero.jpg`,
   },
   {
     company: `Audius`,
