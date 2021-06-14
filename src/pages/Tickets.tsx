@@ -177,42 +177,6 @@ const Tickets = () => {
               Fill in the form
             </Link>
           </Flex>
-          <Flex
-            sx={{
-              flexDirection: `column`,
-              alignItems: `center`,
-              border: `2px solid`,
-              borderColor: `primary`,
-              padding: `30px`,
-              width: [`80%`, null, `40%`],
-              mx: `auto`,
-              ':hover': {
-                borderColor: `text`,
-              },
-            }}
-          >
-            <Text
-              sx={{
-                fontSize: `2rem`,
-                mb: `1.75rem`,
-                textAlign: `center`,
-                height: `8rem`,
-              }}
-            >
-              International Students
-            </Text>
-            <Text sx={{ height: `6rem`, textAlign: `center` }}>
-              Get a free ticket to EthCC[4]
-            </Text>
-            <Link
-              variant="primary"
-              href={STUDENT_APPLICATION}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Fill in the form
-            </Link>
-          </Flex>
         </Flex>
       </Container>
     </main>
