@@ -856,13 +856,6 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/James_Beck.jpg`,
   },
   {
-    company: `Golem Network`,
-    firstname: `Maria-Paula`,
-    lastname: `Fernandez`,
-    link: `https://twitter.com/@MPtherealMVP`,
-    picture: `/speakers/Maria-Paula_Fernandez.jpg`,
-  },
-  {
     company: `The Mangrove`,
     firstname: `Vincent`,
     lastname: `Danos`,
