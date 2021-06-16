@@ -28,6 +28,8 @@ import cartoonbase from '@assets/sponsors/cartoonbase.png';
 import near from '@assets/sponsors/near.png';
 import heightyheightmph from '@assets/sponsors/88mph.svg';
 import aws from '@assets/sponsors/aws.jpg';
+import celo from '@assets/sponsors/celo.jpg';
+import iexec from '@assets/sponsors/iexec.jpg';
 
 interface SponsorGroup {
   size: number;
@@ -152,6 +154,17 @@ export const BRONZE: SponsorGroup = {
       picture: cartoonbase,
       link: `https://cartoonbase.com/`,
       zoom: 1.5,
+    },
+    {
+      name: `Celo`,
+      picture: celo,
+      link: `https://celo.org/`,
+      zoom: 1.5,
+    },
+    {
+      name: `IExec`,
+      picture: iexec,
+      link: `https://iex.ec/`,
     },
   ],
 };
