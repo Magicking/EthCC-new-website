@@ -46,13 +46,16 @@ const Home = () => {
         <Flex sx={{ mt: `50px`, flexDirection: [`column`, `row`] }}>
           <Text
             variant="links.primary"
-            onClick={() =>
-              window.open(
-                TICKET_FIAT_PAYWALL,
-                `_blank`,
-                `noopener, noreferrer , width=650, height=600, top=100, left=100, toolbar=no, resizable=yes, scrollbars=yes, status=no`,
-              )
-            }
+            sx={{
+              opacity: `.5`,
+              cursor: `not-allowed`,
+              ':hover': {
+                color: `text`,
+              },
+              ':hover:before': {
+                width: `0`,
+              },
+            }}
           >
             Buy Ticket in €
           </Text>

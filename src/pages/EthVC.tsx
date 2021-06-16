@@ -275,20 +275,17 @@ const EthVC = () => (
                   >
                     Free
                   </Text>
+                  {` `}
                   and you can apply by following the steps below:
                 </Text>
                 <ol>
                   <li>
                     <Text>
-                      <Link
-                        sx={{ textDecoration: `underline` }}
-                        href={SPEAKER_APPLICATION}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                      <Text sx={{ textDecoration: `line-through` }}>
                         Apply here
-                      </Link>
-                      to be a speaker during the event
+                      </Text>
+                      {` `}
+                      (applications are closed) to be a speaker during the event
                     </Text>
                   </li>
                   <li>
@@ -333,17 +330,12 @@ const EthVC = () => (
               <Flex sx={{ flexDirection: `column` }}>
                 <ul>
                   <li>
-                    <Link
-                      sx={{ textDecoration: `underline` }}
-                      href={VC_TRACK_VIRTUAL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <Text sx={{ textDecoration: `line-through` }}>
                       Buy the “VC Track Virtual”
-                    </Link>
+                    </Text>
                     {` `}
-                    (virtual passes for up to 4 attendees): €799 (+tax) Buy
-                    =&gt; here
+                    (sold out) (virtual passes for up to 4 attendees): €799
+                    (+tax) Buy =&gt; here
                   </li>
                   <li>
                     <Text>

@@ -31,9 +31,7 @@ const Tickets = () => {
               width: [`80%`, null, `40%`],
               mx: `auto`,
               mb: `5rem`,
-              ':hover': {
-                borderColor: `text`,
-              },
+              opacity: `.5`,
             }}
           >
             <Text sx={{ fontSize: `2rem`, mb: `1.75rem` }}>Buy in Euro</Text>
@@ -65,15 +63,18 @@ const Tickets = () => {
             </Flex>
             <Text
               variant="links.primary"
-              onClick={() =>
-                window.open(
-                  TICKET_FIAT_PAYWALL,
-                  `_blank`,
-                  `noopener, noreferrer , width=650, height=600, top=100, left=100, toolbar=no, resizable=yes, scrollbars=yes, status=no`,
-                )
-              }
+              sx={{
+                cursor: `not-allowed`,
+                opacity: `.5`,
+                ':hover': {
+                  color: `text`,
+                },
+                ':hover:before': {
+                  width: `0`,
+                },
+              }}
             >
-              Buy Ticket
+              Sold out
             </Text>
           </Flex>
           <Flex
@@ -155,13 +156,13 @@ const Tickets = () => {
               flexDirection: `column`,
               alignItems: `center`,
               border: `2px solid`,
-              borderColor: `text`,
+              borderColor: `primary`,
               padding: `30px`,
               mb: [`5rem`, null, 0],
               width: [`80%`, null, `40%`],
               mx: `auto`,
               ':hover': {
-                borderColor: `primary`,
+                borderColor: `text`,
               },
             }}
           >
