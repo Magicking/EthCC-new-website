@@ -16,6 +16,16 @@ import kleros from '@assets/sponsors/kleros.png';
 import starkware from '@assets/sponsors/starkware.png';
 import cometh from '@assets/sponsors/cometh.png';
 import kaiko from '@assets/sponsors/kaiko.png';
+import aurora from '@assets/sponsors/aurora.png';
+import hoard from '@assets/sponsors/hoard.png';
+import graph from '@assets/sponsors/graph.png';
+import dyp from '@assets/sponsors/dyp.png';
+import stakedao from '@assets/sponsors/stakedao.png';
+import boson from '@assets/sponsors/boson.png';
+import chainlink from '@assets/sponsors/chainlink.png';
+import oneinch from '@assets/sponsors/oneinch.png';
+import cartoonbase from '@assets/sponsors/cartoonbase.png';
+import near from '@assets/sponsors/near.png';
 
 interface SponsorGroup {
   size: number;
@@ -71,7 +81,13 @@ export const SILVER: SponsorGroup = {
       name: `Yap`,
       picture: yap,
       link: `http://www.yapglobal.com/`,
-      zoom: 1.2,
+      zoom: 1.3,
+    },
+    {
+      name: `Near`,
+      picture: near,
+      link: `https://near.org/`,
+      zoom: 1.5,
     },
   ],
 };
@@ -106,6 +122,35 @@ export const BRONZE: SponsorGroup = {
       link: `https://witnet.io/`,
       zoom: 1.4,
     },
+    {
+      name: `Stakedao`,
+      picture: stakedao,
+      link: `https://stakedao.org/`,
+    },
+    {
+      name: `Boson`,
+      picture: boson,
+      link: `https://bosonprotocol.io/`,
+      zoom: 1.4,
+    },
+    {
+      name: `Chainlink`,
+      picture: chainlink,
+      link: `https://chain.link/`,
+      zoom: 2.2,
+    },
+    {
+      name: `1inch`,
+      picture: oneinch,
+      link: `https://1inch.io/`,
+      zoom: 1.2,
+    },
+    {
+      name: `Cartoonbase`,
+      picture: cartoonbase,
+      link: `https://cartoonbase.com/`,
+      zoom: 1.5,
+    },
   ],
 };
 
@@ -122,6 +167,17 @@ export const IRON: SponsorGroup = {
       picture: arcadia,
       link: `https://arcadiamgroup.com/`,
       zoom: 1.5,
+    },
+    {
+      name: `The Graph`,
+      picture: graph,
+      link: `https://thegraph.com/`,
+    },
+    {
+      name: `Dyp`,
+      picture: dyp,
+      link: `https://dyp.finance/`,
+      zoom: 1.4,
     },
   ],
 };
@@ -152,10 +208,21 @@ export const COPPER: SponsorGroup = {
       zoom: 1.2,
     },
     {
-      name: `kaiko`,
+      name: `Kaiko`,
       picture: kaiko,
       link: `https://kaiko.com/`,
       zoom: 1.5,
+    },
+    {
+      name: `Aurora`,
+      picture: aurora,
+      link: `https://aurora.dev/`,
+      zoom: 1.5,
+    },
+    {
+      name: `Hoard`,
+      picture: hoard,
+      link: `https://hoard.exchange/`,
     },
   ],
 };
