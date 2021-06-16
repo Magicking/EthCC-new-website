@@ -26,6 +26,8 @@ import chainlink from '@assets/sponsors/chainlink.png';
 import oneinch from '@assets/sponsors/oneinch.png';
 import cartoonbase from '@assets/sponsors/cartoonbase.png';
 import near from '@assets/sponsors/near.png';
+import heightyheightmph from '@assets/sponsors/88mph.svg';
+import aws from '@assets/sponsors/aws.jpg';
 
 interface SponsorGroup {
   size: number;
@@ -178,6 +180,16 @@ export const IRON: SponsorGroup = {
       picture: dyp,
       link: `https://dyp.finance/`,
       zoom: 1.4,
+    },
+    {
+      name: `88mph`,
+      picture: heightyheightmph,
+      link: `https://88mph.app/`,
+    },
+    {
+      name: `AWS`,
+      picture: aws,
+      link: `https://aws.amazon.com/`,
     },
   ],
 };

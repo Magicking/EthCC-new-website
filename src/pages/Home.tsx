@@ -16,8 +16,6 @@ import {
   TICKET_FIAT_PAYWALL,
   BUDGET_TRANSPARENCY_ARTICLE,
   STUDENT_APPLICATION,
-  SPEAKERS,
-  SPEAKER_APPLICATION,
   PARTNERS,
   SPONSORS,
   YAP_MAIL,
@@ -58,13 +56,23 @@ const Home = () => {
           >
             Buy Ticket in €
           </Text>
-          {/* <Text
+          <Text
             variant="links.primary"
-            onClick={() => setIsOpen(true)}
-            sx={{ ml: [0, `10px`], mt: [`1rem`, 0] }}
+            sx={{
+              ml: [0, `10px`],
+              mt: [`1rem`, 0],
+              opacity: `.5`,
+              cursor: `not-allowed`,
+              ':hover': {
+                color: `text`,
+              },
+              ':hover:before': {
+                width: `0`,
+              },
+            }}
           >
             Buy Ticket in Crypto 🚀
-          </Text> */}
+          </Text>
         </Flex>
       </Container>
       <Container>
@@ -191,60 +199,6 @@ const Home = () => {
               alt="community pic"
             />
           </Box>
-        </Flex>
-      </Container>
-      <Container>
-        <Flex sx={{ mb: `3rem` }}>
-          <Heading variant="title">Speakers</Heading>
-        </Flex>
-        <Flex sx={{ flexDirection: [`column`, null, `row`] }}>
-          <Flex sx={{ flex: `0 0 50%`, flexWrap: `wrap` }}>
-            {SPEAKERS.slice(0, 6).map((speaker) => (
-              <Box
-                sx={{ width: `150px`, mx: `auto`, mt: `3rem` }}
-                key={`${speaker.firstname}-${speaker.lastname}`}
-              >
-                <Image
-                  sx={{
-                    borderRadius: `40px`,
-                    border: `2px solid`,
-                    borderColor: `primary`,
-                  }}
-                  src={speaker.picture}
-                  width="150px"
-                  height="150px"
-                  alt={`${speaker.firstname} ${speaker.lastname}`}
-                />
-              </Box>
-            ))}
-          </Flex>
-          <Flex
-            sx={{
-              flexDirection: `column`,
-              justifyContent: `center`,
-              pl: [`inherit`, null, `3rem`],
-              px: `15px`,
-              mt: [`3rem`, null, `inherit`],
-            }}
-          >
-            <Heading variant="subHeading">
-              Join our community of speakers
-            </Heading>
-            <Text sx={{ mb: `1.5rem` }}>
-              We welcome any application for talks or workshops. All selected
-              speakers will have a free access to EthCC[4]
-            </Text>
-            <Flex>
-              <Link
-                variant="primary"
-                href={SPEAKER_APPLICATION}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Apply Here!
-              </Link>
-            </Flex>
-          </Flex>
         </Flex>
       </Container>
       <Container>

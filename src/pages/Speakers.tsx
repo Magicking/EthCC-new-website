@@ -1,15 +1,7 @@
 import React from 'react';
 
-import {
-  Container,
-  Flex,
-  Heading,
-  Text,
-  Link,
-  SpeakerCard,
-  Box,
-} from '@components';
-import { SPEAKERS, SPEAKER_APPLICATION } from '@config';
+import { Container, Flex, Heading, Text, SpeakerCard, Box } from '@components';
+import { SPEAKERS } from '@config';
 
 const Speakers = () => (
   <main style={{ width: `100%` }}>
@@ -22,14 +14,21 @@ const Speakers = () => (
           Become an EthCC speaker
         </Text>
         <Flex>
-          <Link
-            variant="primary"
-            href={SPEAKER_APPLICATION}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Text
+            variant="links.primary"
+            sx={{
+              cursor: `not-allowed`,
+              opacity: `.5`,
+              ':hover': {
+                color: `text`,
+              },
+              ':hover:before': {
+                width: `0`,
+              },
+            }}
           >
-            Apply Here!
-          </Link>
+            Applications are closed
+          </Text>
         </Flex>
       </Flex>
     </Container>

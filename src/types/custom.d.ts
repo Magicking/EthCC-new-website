@@ -11,6 +11,11 @@ declare module '*.jpg' {
   export = value;
 }
 
+declare module '*.svg' {
+  const value: any;
+  export = value;
+}
+
 interface CustomWindow extends Window {
   // Web3
   ethereum?: any;

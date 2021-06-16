@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { Container, Flex, Text, Heading, UnlockModal, Link } from '@components';
 import {
   KYBER_PAYWALL,
-  STUDENT_APPLICATION,
   TICKET_FIAT_PAYWALL,
   VOLONTEER_APPLICATION,
 } from '@config';
@@ -77,7 +76,7 @@ const Tickets = () => {
               Buy Ticket
             </Text>
           </Flex>
-          {/* <Flex
+          <Flex
             sx={{
               flexDirection: `column`,
               alignItems: `center`,
@@ -87,9 +86,7 @@ const Tickets = () => {
               width: [`80%`, null, `40%`],
               mx: `auto`,
               mb: `5rem`,
-              ':hover': {
-                borderColor: `primary`,
-              },
+              opacity: `.5`,
             }}
           >
             <Text sx={{ fontSize: `2rem`, mb: `1.75rem` }}>Buy in Crypto</Text>
@@ -119,8 +116,20 @@ const Tickets = () => {
               <Text>Free Catering</Text>
               <Text>EthCC Swag</Text>
             </Flex>
-            <Text variant="links.primary" onClick={() => setIsOpen(true)}>
-              Buy Ticket
+            <Text
+              variant="links.primary"
+              sx={{
+                cursor: `not-allowed`,
+                opacity: `.5`,
+                ':hover': {
+                  color: `text`,
+                },
+                ':hover:before': {
+                  width: `0`,
+                },
+              }}
+            >
+              Sold out
             </Text>
             <Text
               sx={{
@@ -140,7 +149,7 @@ const Tickets = () => {
             >
               Need to buy DAI ?
             </Text>
-          </Flex> */}
+          </Flex>
           <Flex
             sx={{
               flexDirection: `column`,
