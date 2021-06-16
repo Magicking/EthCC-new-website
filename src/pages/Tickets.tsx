@@ -77,7 +77,7 @@ const Tickets = () => {
               Buy Ticket
             </Text>
           </Flex>
-          <Flex
+          {/* <Flex
             sx={{
               flexDirection: `column`,
               alignItems: `center`,
@@ -140,7 +140,7 @@ const Tickets = () => {
             >
               Need to buy DAI ?
             </Text>
-          </Flex>
+          </Flex> */}
           <Flex
             sx={{
               flexDirection: `column`,
