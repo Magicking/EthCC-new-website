@@ -58,6 +58,13 @@ const Home = () => {
           >
             Buy Ticket in €
           </Text>
+          <Text
+            variant="links.primary"
+            onClick={() => setIsOpen(true)}
+            sx={{ ml: [0, `10px`], mt: [`1rem`, 0] }}
+          >
+            Buy Ticket in Crypto 🚀
+          </Text>
         </Flex>
       </Container>
       <Container>
