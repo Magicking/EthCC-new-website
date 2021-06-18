@@ -163,7 +163,7 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Chu_Hsuan-Ting.jpg`,
   },
   {
-    company: `Web3 Foundation`,
+    company: `RMRK`,
     firstname: `Bruno`,
     lastname: `Škvorc`,
     link: `https://twitter.com/bitfalls`,
@@ -317,7 +317,7 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Ayesha_Kiani.jpg`,
   },
   {
-    company: `cLabs`,
+    company: `Celo`,
     firstname: `Markus`,
     lastname: `Franke`,
     link: `https://www.linkedin.com/in/markus-f-82242028/`,
@@ -399,13 +399,6 @@ export const SPEAKERS: Speaker[] = [
     lastname: `Gueiros`,
     link: `https://www.linkedin.com/in/solangegueiros/`,
     picture: `/speakers/Solange_Gueiros.jpg`,
-  },
-  {
-    company: `Infrachain`,
-    firstname: `Fabrice`,
-    lastname: `Croiseaux`,
-    link: `https://www.linkedin.com/in/fcroiseaux/`,
-    picture: `/speakers/Fabrice_Croiseaux.jpg`,
   },
   {
     company: `Witnet Foundation`,
