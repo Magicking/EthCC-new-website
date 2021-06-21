@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 
-import { Container, Flex, Text, Heading, UnlockModal, Link } from '@components';
-import {
-  KYBER_PAYWALL,
-  TICKET_FIAT_PAYWALL,
-  VOLONTEER_APPLICATION,
-} from '@config';
+import { Container, Flex, Text, Heading, UnlockModal } from '@components';
 
 const Tickets = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -132,7 +127,7 @@ const Tickets = () => {
             >
               Sold out
             </Text>
-            <Text
+            {/* <Text
               sx={{
                 mt: `20px`,
                 fontWeight: `bold`,
@@ -149,7 +144,7 @@ const Tickets = () => {
               }
             >
               Need to buy DAI ?
-            </Text>
+            </Text> */}
           </Flex>
           <Flex
             sx={{
@@ -159,6 +154,7 @@ const Tickets = () => {
               borderColor: `primary`,
               padding: `30px`,
               mb: [`5rem`, null, 0],
+              opacity: `.5`,
               width: [`80%`, null, `40%`],
               mx: `auto`,
               ':hover': {
@@ -178,14 +174,21 @@ const Tickets = () => {
             <Text sx={{ height: `6rem`, textAlign: `center` }}>
               Help us out and get a free ticket to EthCC[4]
             </Text>
-            <Link
-              variant="primary"
-              href={VOLONTEER_APPLICATION}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Text
+              variant="links.primary"
+              sx={{
+                cursor: `not-allowed`,
+                opacity: `.5`,
+                ':hover': {
+                  color: `text`,
+                },
+                ':hover:before': {
+                  width: `0`,
+                },
+              }}
             >
-              Fill in the form
-            </Link>
+              Gone!
+            </Text>
           </Flex>
         </Flex>
       </Container>

@@ -14,7 +14,6 @@ import {
 import { useTimeLeft } from '@hooks';
 import {
   BUDGET_TRANSPARENCY_ARTICLE,
-  STUDENT_APPLICATION,
   PARTNERS,
   SPONSORS,
   MEDIA,
@@ -175,7 +174,7 @@ const Home = () => {
               {` `}
               and any extra profit will be redistributed in the ecosystem.
             </Text>
-            <Heading variant="subHeading">Volunteering and students</Heading>
+            {/* <Heading variant="subHeading">Volunteering and students</Heading>
             <Text>
               We wish to welcome for free as many students as possible! If you
               are a student in France, you can have a free access to EthCC[4] by
@@ -189,7 +188,7 @@ const Home = () => {
                 If you are an international student, you can apply to get a free
                 ticket.
               </Link>
-            </Text>
+          </Text> */}
           </Flex>
           <Box
             sx={{ flex: `0 0 50%`, px: `15px`, mb: [`3rem`, null, `inherit`] }}

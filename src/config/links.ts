@@ -6,7 +6,7 @@ export const STUDENT_APPLICATION = `https://docs.google.com/forms/d/e/1FAIpQLScL
 
 export const SPEAKER_APPLICATION = `https://docs.google.com/forms/d/e/1FAIpQLSel5GfooluMOI_rVhQs4dE2fJfs8632I1En7OoruGQ_AGax1g/viewform`;
 
-export const VOLONTEER_APPLICATION = `https://docs.google.com/forms/d/e/1FAIpQLScva1Muw7fxhhb-TipQgoHREoP1V4YuK8XYEpIrrIfCfpuRJg/viewform`;
+export const VOLUNTEER_APPLICATION = `https://docs.google.com/forms/d/e/1FAIpQLScva1Muw7fxhhb-TipQgoHREoP1V4YuK8XYEpIrrIfCfpuRJg/viewform`;
 
 export const YAP_MAIL = `mailto:team@yapglobal.com`;
 
