@@ -11,7 +11,7 @@ import {
 } from '@components';
 
 import kaiko from '@assets/kaiko.png';
-import { INVITES_MAIL, SPEAKER_APPLICATION, VC_TRACK_VIRTUAL } from '@config';
+import { INVITES_MAIL } from '@config';
 
 const EthVC = () => (
   <main style={{ width: `100%` }}>

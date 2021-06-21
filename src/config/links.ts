@@ -15,3 +15,5 @@ export const VC_TRACK_VIRTUAL = `https://www.weezevent.com/ethvc2-ethcc4`;
 export const INVITES_MAIL = `mailto:elodie.demarchi@kaiko.com;hello@kaiko.com?cc=bettina@ethereum-france.com`;
 
 export const KYBER_PAYWALL = `https://widget.kyber.network/v0.8.0/?type=buy&mode=popup&lang=en&pinnedTokens=ETH_KNC_DAI&receiveToken=DAI&receiveAmount=350&paramForwarding=true&network=mainnet&theme=theme-dark`;
+
+export const CONTACT_MAIL = `mailto:contact@ethereum-france.com`;

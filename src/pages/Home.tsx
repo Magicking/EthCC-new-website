@@ -13,13 +13,12 @@ import {
 } from '@components';
 import { useTimeLeft } from '@hooks';
 import {
-  TICKET_FIAT_PAYWALL,
   BUDGET_TRANSPARENCY_ARTICLE,
   STUDENT_APPLICATION,
   PARTNERS,
   SPONSORS,
-  YAP_MAIL,
   MEDIA,
+  CONTACT_MAIL,
 } from '@config';
 
 import communityPic from '@assets/community_pic.png';
@@ -265,8 +264,8 @@ const Home = () => {
             <Maccaron {...item} key={item.name} size={150} />
           ))}
         </Flex>
-        <Flex>
-          <Link variant="primary" href={YAP_MAIL}>
+        <Flex sx={{ justifyContent: `center` }}>
+          <Link variant="primary" href={CONTACT_MAIL}>
             Contact Us!
           </Link>
         </Flex>
