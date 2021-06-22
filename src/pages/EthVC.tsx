@@ -9,9 +9,9 @@ import {
   Link,
   Accordion,
 } from '@components';
+import { INVITES_MAIL, VC_TRACK_VIRTUAL } from '@config';
 
 import kaiko from '@assets/kaiko.png';
-import { INVITES_MAIL } from '@config';
 
 const EthVC = () => (
   <main style={{ width: `100%` }}>
@@ -330,12 +330,17 @@ const EthVC = () => (
               <Flex sx={{ flexDirection: `column` }}>
                 <ul>
                   <li>
-                    <Text sx={{ textDecoration: `line-through` }}>
+                    <Link
+                      sx={{ textDecoration: `underline` }}
+                      href={VC_TRACK_VIRTUAL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Buy the “VC Track Virtual”
-                    </Text>
+                    </Link>
                     {` `}
-                    (sold out) (virtual passes for up to 4 attendees): €799
-                    (+tax) Buy =&gt; here
+                    (virtual passes for up to 4 attendees): €799 (+tax) Buy
+                    =&gt; here
                   </li>
                   <li>
                     <Text>
