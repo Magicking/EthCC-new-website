@@ -2,6 +2,13 @@ import { Speaker } from '@types';
 
 export const SPEAKERS: Speaker[] = [
   {
+    company: `Anoma`,
+    firstname: `Adrian`,
+    lastname: `Brink`,
+    link: `https://twitter.com/adrian_brink`,
+    picture: `/speakers/Adrian_Brink.jpg`,
+  },
+  {
     company: `Ethereum Foundation`,
     firstname: `Martin`,
     lastname: `Lundfall`,
@@ -1396,13 +1403,6 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Gregor_Zavcer.jpg`,
   },
   {
-    company: `Okcoin`,
-    firstname: `Caitlin`,
-    lastname: `Dydzuhn`,
-    link: `https://twitter.com/CDydzuhn`,
-    picture: `/speakers/Caitlin_Dydzuhn.jpg`,
-  },
-  {
     company: `Ethereum Swarm`,
     firstname: `Michelle`,
     lastname: `Thuy`,
@@ -1520,5 +1520,19 @@ export const SPEAKERS: Speaker[] = [
     lastname: `Robertson`,
     link: `https://twitter.com/ccamrobertson`,
     picture: `/speakers/Cameron_Robertson.jpg`,
+  },
+  {
+    company: `Quilt`,
+    firstname: `Ansgar`,
+    lastname: `Dietrich`,
+    link: `https://twitter.com/adietrichs`,
+    picture: `/speakers/Ansgar_Dietrich.jpg`,
+  },
+  {
+    company: `Ethereum Foundation`,
+    firstname: `Piper`,
+    lastname: `Merriam`,
+    link: `https://github.com/pipermerriam/`,
+    picture: `/speakers/Piper_Merriam.jpg`,
   },
 ];

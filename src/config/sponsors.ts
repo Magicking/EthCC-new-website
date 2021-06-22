@@ -1,4 +1,5 @@
 import aave from '@assets/sponsors/aave.png';
+import apwine from '@assets/sponsors/apwine.png';
 import yap from '@assets/partners/yap.png';
 import audius from '@assets/sponsors/audius.png';
 import ledger from '@assets/sponsors/ledger.png';
@@ -22,7 +23,7 @@ import graph from '@assets/sponsors/graph.png';
 import dyp from '@assets/sponsors/dyp.png';
 import stakedao from '@assets/sponsors/stakedao.png';
 import boson from '@assets/sponsors/boson.png';
-import chainlink from '@assets/sponsors/chainlink.png';
+import chainlink from '@assets/sponsors/chainlink.svg';
 import oneinch from '@assets/sponsors/oneinch.png';
 import cartoonbase from '@assets/sponsors/cartoonbase.png';
 import near from '@assets/sponsors/near.png';
@@ -30,6 +31,8 @@ import heightyheightmph from '@assets/sponsors/88mph.svg';
 import aws from '@assets/sponsors/aws.jpg';
 import celo from '@assets/sponsors/celo.jpg';
 import iexec from '@assets/sponsors/iexec.jpg';
+import quantstamp from '@assets/sponsors/quantstamp.png';
+import polygon from '@assets/sponsors/polygon.svg';
 
 interface SponsorGroup {
   size: number;
@@ -141,7 +144,7 @@ export const BRONZE: SponsorGroup = {
       name: `Chainlink`,
       picture: chainlink,
       link: `https://chain.link/`,
-      zoom: 2.2,
+      zoom: 1.2,
     },
     {
       name: `1inch`,
@@ -204,6 +207,12 @@ export const IRON: SponsorGroup = {
       picture: aws,
       link: `https://aws.amazon.com/`,
     },
+    {
+      name: `Polygon`,
+      picture: polygon,
+      link: `https://polygon.technology/`,
+      zoom: 1.1,
+    },
   ],
 };
 
@@ -248,6 +257,18 @@ export const COPPER: SponsorGroup = {
       name: `Hoard`,
       picture: hoard,
       link: `https://hoard.exchange/`,
+    },
+    {
+      name: `Quantstamp`,
+      picture: quantstamp,
+      link: `https://quantstamp.com/`,
+      zoom: 1.3,
+    },
+    {
+      name: `APWine`,
+      picture: apwine,
+      link: `https://www.apwine.fi/`,
+      zoom: 1.3,
     },
   ],
 };
