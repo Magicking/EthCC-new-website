@@ -128,13 +128,6 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Riccardo_Persiani.jpg`,
   },
   {
-    company: `ConsenSys`,
-    firstname: `Nick`,
-    lastname: `Kritikos`,
-    link: `https://twitter.com/Kritikos`,
-    picture: `/speakers/Nick_Kritikos.jpg`,
-  },
-  {
     company: `Ethereum Foundation`,
     firstname: `Christian`,
     lastname: `Reitwiessner`,
