@@ -1319,6 +1319,13 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Matteo_Tambussi.jpg`,
   },
   {
+    company: `LegalHacker Turin`,
+    firstname: `Luigi`,
+    lastname: `Cantisani`,
+    link: `https://it.linkedin.com/in/luigicantisani`,
+    picture: `/speakers/Luigi_Cantisani.jpg`,
+  },
+  {
     company: `Dfns`,
     firstname: `Clarisse`,
     lastname: `Hagege`,
