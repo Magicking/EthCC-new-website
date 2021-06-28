@@ -1315,7 +1315,7 @@ export const SPEAKERS: Speaker[] = [
     company: `Ethereum4 by Remix`,
     firstname: `Matteo`,
     lastname: `Tambussi`,
-    link: `https://twitter.com/Matteo Tambussi`,
+    link: `https://twitter.com/matlepunk`,
     picture: `/speakers/Matteo_Tambussi.jpg`,
   },
   {
