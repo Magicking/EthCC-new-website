@@ -373,13 +373,6 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Luc_Jodet.jpg`,
   },
   {
-    company: `Kleros`,
-    firstname: `Ferit`,
-    lastname: `Tuncer`,
-    link: `https://twitter.com/0xferittuncer`,
-    picture: `/speakers/Ferit_Tuncer.jpg`,
-  },
-  {
     company: `YAP Global`,
     firstname: `Samantha`,
     lastname: `Yap`,
