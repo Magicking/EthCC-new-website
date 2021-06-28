@@ -213,10 +213,10 @@ export const SPEAKERS: Speaker[] = [
   },
   {
     company: `GoodDollar.org`,
-    firstname: `Anna`,
-    lastname: `Stone`,
-    link: `https://www.linkedin.com/in/annalstone/`,
-    picture: `/speakers/Anna_Stone.jpg`,
+    firstname: `Tomer`,
+    lastname: `Bariach`,
+    link: `https://twitter.com/gooddollarorg`,
+    picture: `/speakers/Tomer_Bariach.jpg`,
   },
   {
     company: `ChainSafe Systems`,
