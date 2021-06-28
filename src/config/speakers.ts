@@ -45,10 +45,10 @@ export const SPEAKERS: Speaker[] = [
   },
   {
     company: `AAVE`,
-    firstname: `Emilio`,
-    lastname: `Frangella`,
-    link: `https://twitter.com/The3D_`,
-    picture: `/speakers/Emilio_Frangela.jpg`,
+    firstname: `Ernesto`,
+    lastname: `Boado`,
+    link: `https://linkedin.com/in/ernesto-boado`,
+    picture: `/speakers/Ernesto_Boado.jpg`,
   },
   {
     company: `Monolith`,
