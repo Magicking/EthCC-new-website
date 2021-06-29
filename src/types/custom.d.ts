@@ -24,4 +24,5 @@ interface CustomWindow extends Window {
   unlockProtocolConfig?: any;
   Web3Provider?: ethers.providers.Web3Provider;
   Web3Signer?: Web3Provider;
+  google?: any;
 }

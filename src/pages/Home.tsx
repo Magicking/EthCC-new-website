@@ -29,7 +29,12 @@ const Home = () => {
     <main style={{ width: `100%` }}>
       {isOpen && <UnlockModal closeModal={() => setIsOpen(false)} />}
       <Container sx={{ mt: `5em` }}>
-        <Flex sx={{ width: [`100%`, null, `70%`], flexDirection: `column` }}>
+        <Flex
+          sx={{
+            width: [`100%`, null, `70%`],
+            flexDirection: `column`,
+          }}
+        >
           <Heading as="h1" variant="bigHeading" sx={{ mb: `1.5rem` }}>
             Ethereum Community Conference 4
           </Heading>
@@ -41,7 +46,7 @@ const Home = () => {
             sx={{ fontSize: `1.7rem`, color: `primary` }}
           >{`${timeLeft.weeks} weeks ${timeLeft.days} days ${timeLeft.hours} hr ${timeLeft.minutes} min ${timeLeft.seconds} sec`}</Text>
         </Flex>
-        <Flex sx={{ mt: `50px`, flexDirection: [`column`, `row`] }}>
+        {/* <Flex sx={{ mt: `50px`, flexDirection: [`column`, `row`] }}>
           <Text
             variant="links.primary"
             sx={{
@@ -74,7 +79,7 @@ const Home = () => {
           >
             Buy Ticket in Crypto 🚀
           </Text>
-        </Flex>
+        </Flex> */}
       </Container>
       <Container>
         <Flex

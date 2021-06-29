@@ -7,6 +7,6 @@ export { Seo } from './Seo';
 export { SpeakerCard } from './SpeakerCard';
 export { Accordion } from './Accordion';
 export { Maccaron } from './Maccaron';
-
+export { default as CovidMap } from './CovidMap';
 // re-export all components from theme-ui
 export * from '@theme-ui/components';

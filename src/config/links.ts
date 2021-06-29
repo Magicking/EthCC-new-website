@@ -17,3 +17,11 @@ export const INVITES_MAIL = `mailto:elodie.demarchi@kaiko.com;hello@kaiko.com?cc
 export const KYBER_PAYWALL = `https://widget.kyber.network/v0.8.0/?type=buy&mode=popup&lang=en&pinnedTokens=ETH_KNC_DAI&receiveToken=DAI&receiveAmount=350&paramForwarding=true&network=mainnet&theme=theme-dark`;
 
 export const CONTACT_MAIL = `mailto:contact@ethereum-france.com`;
+
+export const TRAVELING_TO_FRANCE = `https://www.diplomatie.gouv.fr/en/coming-to-france/coronavirus-advice-for-foreign-nationals-in-france/`;
+
+export const IN_PARIS_MEASURES = `https://www.gouvernement.fr/en/coronavirus-covid-19`;
+
+export const ETHCC_WEEK = `https://ethccweek.fr`;
+
+export const LEDGER_AFTER_PARTY = `https://www.eventbrite.com/e/billets-ethcc-afterparty-by-ledger-161244343171`;

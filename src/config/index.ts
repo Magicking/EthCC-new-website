@@ -5,3 +5,4 @@ export * from './speakers';
 export * from './partners';
 export * from './sponsors';
 export * from './media';
+export * from './markers';
