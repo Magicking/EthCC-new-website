@@ -45,10 +45,10 @@ export const SPEAKERS: Speaker[] = [
   },
   {
     company: `AAVE`,
-    firstname: `Emilio`,
-    lastname: `Frangella`,
-    link: `https://twitter.com/The3D_`,
-    picture: `/speakers/Emilio_Frangela.jpg`,
+    firstname: `Ernesto`,
+    lastname: `Boado`,
+    link: `https://linkedin.com/in/ernesto-boado`,
+    picture: `/speakers/Ernesto_Boado.jpg`,
   },
   {
     company: `Monolith`,
@@ -126,13 +126,6 @@ export const SPEAKERS: Speaker[] = [
     lastname: `Persiani`,
     link: `https://www.linkedin.com/in/riccardo-persiani/`,
     picture: `/speakers/Riccardo_Persiani.jpg`,
-  },
-  {
-    company: `ConsenSys`,
-    firstname: `Nick`,
-    lastname: `Kritikos`,
-    link: `https://twitter.com/Kritikos`,
-    picture: `/speakers/Nick_Kritikos.jpg`,
   },
   {
     company: `Ethereum Foundation`,
@@ -213,10 +206,10 @@ export const SPEAKERS: Speaker[] = [
   },
   {
     company: `GoodDollar.org`,
-    firstname: `Anna`,
-    lastname: `Stone`,
-    link: `https://www.linkedin.com/in/annalstone/`,
-    picture: `/speakers/Anna_Stone.jpg`,
+    firstname: `Tomer`,
+    lastname: `Bariach`,
+    link: `https://twitter.com/gooddollarorg`,
+    picture: `/speakers/Tomer_Bariach.jpg`,
   },
   {
     company: `ChainSafe Systems`,
@@ -371,13 +364,6 @@ export const SPEAKERS: Speaker[] = [
     lastname: `Jodet`,
     link: `https://twitter.com/lucjodet`,
     picture: `/speakers/Luc_Jodet.jpg`,
-  },
-  {
-    company: `Kleros`,
-    firstname: `Ferit`,
-    lastname: `Tuncer`,
-    link: `https://twitter.com/0xferittuncer`,
-    picture: `/speakers/Ferit_Tuncer.jpg`,
   },
   {
     company: `YAP Global`,
@@ -658,13 +644,6 @@ export const SPEAKERS: Speaker[] = [
     lastname: `Stone`,
     link: `https://twitter.com/drew___stone`,
     picture: `/speakers/Drew_Stone.jpg`,
-  },
-  {
-    company: `NuCypher`,
-    firstname: `Ravital`,
-    lastname: `Solomon`,
-    link: `https://www.linkedin.com/in/ravital/`,
-    picture: `/speakers/Ravital_Solomon.jpg`,
   },
   {
     company: `Crypto art advisor and collector`,
@@ -1336,8 +1315,15 @@ export const SPEAKERS: Speaker[] = [
     company: `Ethereum4 by Remix`,
     firstname: `Matteo`,
     lastname: `Tambussi`,
-    link: `https://twitter.com/Matteo Tambussi`,
+    link: `https://twitter.com/matlepunk`,
     picture: `/speakers/Matteo_Tambussi.jpg`,
+  },
+  {
+    company: `LegalHacker Turin`,
+    firstname: `Luigi`,
+    lastname: `Cantisani`,
+    link: `https://it.linkedin.com/in/luigicantisani`,
+    picture: `/speakers/Luigi_Cantisani.jpg`,
   },
   {
     company: `Dfns`,
