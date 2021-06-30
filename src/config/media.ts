@@ -2,6 +2,8 @@ import beincrypto from '@assets/media/beincrypto.png';
 import cryptoast from '@assets/media/cryptoast.png';
 import defiprime from '@assets/media/defiprime.png';
 import francecrypto from '@assets/media/francecrypto.png';
+import nftmorning from '@assets/media/nftmorning.png';
+import cryptonewsz from '@assets/media/cryptonewsz.png';
 
 interface Media {
   name: string;
@@ -33,6 +35,17 @@ export const MEDIA: Media[] = [
     name: `Defi Prime`,
     picture: defiprime,
     link: `https://defiprime.com/`,
+    zoom: 1.4,
+  },
+  {
+    name: `NFT Morning`,
+    picture: nftmorning,
+    link: `https://www.nftmorning.com/`,
+  },
+  {
+    name: `CryptoNewsZ`,
+    picture: cryptonewsz,
+    link: `https://www.cryptonewsz.com/`,
     zoom: 1.4,
   },
 ];
