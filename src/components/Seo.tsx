@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import linkPreview from '@assets/link-preview.png';
+import cover from '@assets/cover.jpg';
 import favicon from '@assets/favicon.png';
 
 export const Seo = () => (
@@ -21,7 +21,7 @@ export const Seo = () => (
       content="Ethereum Community Conferences & Workshops: 20-21-22 July in Paris"
     />
     <meta name="twitter:creator" content="@EthCC" />
-    <meta name="twitter:image" content={linkPreview} />
+    <meta name="twitter:image" content={cover} />
     <meta name="twitter:domain" content="ethcc.io" />
     <link rel="icon" type="image/png" href={favicon} />
   </Helmet>
