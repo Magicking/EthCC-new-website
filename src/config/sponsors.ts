@@ -26,7 +26,7 @@ import boson from '@assets/sponsors/boson.png';
 import chainlink from '@assets/sponsors/chainlink.svg';
 import oneinch from '@assets/sponsors/oneinch.png';
 import cartoonbase from '@assets/sponsors/cartoonbase.png';
-import near from '@assets/sponsors/near.png';
+import near from '@assets/sponsors/near.svg';
 import heightyheightmph from '@assets/sponsors/88mph.svg';
 import aws from '@assets/sponsors/aws.jpg';
 import celo from '@assets/sponsors/celo.jpg';
@@ -94,7 +94,7 @@ export const SILVER: SponsorGroup = {
       name: `Near`,
       picture: near,
       link: `https://near.org/`,
-      zoom: 1.5,
+      zoom: 1.4,
     },
   ],
 };

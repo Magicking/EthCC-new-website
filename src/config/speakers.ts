@@ -79,13 +79,6 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Hadrien_Croubois.jpg`,
   },
   {
-    company: `Streamr`,
-    firstname: `Henri`,
-    lastname: `Pihkala`,
-    link: `https://twitter.com/henripihkala`,
-    picture: `/speakers/Henri_Pihkala.jpg`,
-  },
-  {
     company: `Winding Tree`,
     firstname: `Maksim`,
     lastname: `Izmaylov`,
@@ -133,13 +126,6 @@ export const SPEAKERS: Speaker[] = [
     lastname: `Reitwiessner`,
     link: `https://twitter.com/twitter.com/ethchris`,
     picture: `/speakers/Christian_Reitwiessner.jpg`,
-  },
-  {
-    company: `ConsenSys Diligence / Concordia University`,
-    firstname: `Shayan`,
-    lastname: `Eskandari`,
-    link: `https://shayan.es`,
-    picture: `/speakers/Shayan_Eskandari.jpg`,
   },
   {
     company: `DAppNode`,
@@ -331,7 +317,7 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Cyril_Vignet.jpg`,
   },
   {
-    company: `LazyLedger`,
+    company: `Celestia Labs`,
     firstname: `John`,
     lastname: `Adler`,
     link: `https://twitter.com/jadler0`,
@@ -765,7 +751,7 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Amira_Bouguera.jpg`,
   },
   {
-    company: `Web3api`,
+    company: `Polywrap`,
     firstname: `Jordan`,
     lastname: `Ellis`,
     link: `https://twitter.com/Web3API`,
