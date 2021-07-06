@@ -695,13 +695,6 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Susie_Batt.jpg`,
   },
   {
-    company: `Blockchangers`,
-    firstname: `Jon`,
-    lastname: `Ramvi`,
-    link: `https://twitter.com/JonRamvi`,
-    picture: `/speakers/Jon_Ramvi.jpg`,
-  },
-  {
     company: `TrueBlocks, LLC`,
     firstname: `Thomas-Jay`,
     lastname: `Rush`,
