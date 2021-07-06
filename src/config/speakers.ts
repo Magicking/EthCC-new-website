@@ -1515,13 +1515,6 @@ export const SPEAKERS: Speaker[] = [
     picture: `speakers/Vasiliy_Shapovalov.jpg`,
   },
   {
-    company: `CoinShares`,
-    firstname: `Meltem`,
-    lastname: `Demirors`,
-    link: `https://twitter.com/Melt_Dem`,
-    picture: `speakers/Meltem_Demirors.jpg`,
-  },
-  {
     company: `Spacemesh`,
     firstname: `Lane`,
     lastname: `Rettig`,
