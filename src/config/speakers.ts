@@ -1452,7 +1452,7 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Jeremy_Musighi.jpg`,
   },
   {
-    company: `Horkos Labs`,
+    company: `Privy`,
     firstname: `Henri`,
     lastname: `Stern`,
     link: `https://www.linkedin.com/in/henri-stern/`,
