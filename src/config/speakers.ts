@@ -1570,4 +1570,11 @@ export const SPEAKERS: Speaker[] = [
     link: `https://twitter.com/BardusMarcello`,
     picture: `speakers/Marcello_Bardus.jpg`,
   },
+  {
+    company: `Interchain Foundation`,
+    firstname: `Charly`,
+    lastname: `Fei`,
+    link: `https://twitter.com/charleenfei`,
+    picture: `speakers/Charly_Fei.jpg`,
+  },
 ];
