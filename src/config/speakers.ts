@@ -1556,4 +1556,11 @@ export const SPEAKERS: Speaker[] = [
     link: `https://twitter.com/pdup56`,
     picture: `speakers/Pierre_Duperrin.jpg`,
   },
+  {
+    company: `Gnosis Safe`,
+    firstname: `Auryn`,
+    lastname: `Macmillan`,
+    link: `https://twitter.com/rimeissner`,
+    picture: `speakers/Auryn_Macmillan.jpg`,
+  },
 ];
