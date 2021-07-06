@@ -1577,4 +1577,18 @@ export const SPEAKERS: Speaker[] = [
     link: `https://twitter.com/charleenfei`,
     picture: `speakers/Charly_Fei.jpg`,
   },
+  {
+    company: `ConsenSys Diligence`,
+    firstname: `Goncalo`,
+    lastname: `Sa`,
+    link: `https://twitter.com/consensysaudits`,
+    picture: `speakers/Goncalo_Sa.jpg`,
+  },
+  {
+    company: `ConsenSys Diligence`,
+    firstname: `Joran`,
+    lastname: `Honig`,
+    link: `https://twitter.com/consensysaudits`,
+    picture: `speakers/Joran_Honig.jpg`,
+  },
 ];
