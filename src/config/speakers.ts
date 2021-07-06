@@ -1570,4 +1570,11 @@ export const SPEAKERS: Speaker[] = [
     link: `https://linkedin.com/in/stevenhaft/`,
     picture: `speakers/Steven_Haft.jpg`,
   },
+  {
+    company: `Nethermind`,
+    firstname: `Marcello`,
+    lastname: `Bardus`,
+    link: `https://twitter.com/BardusMarcello`,
+    picture: `speakers/Marcello_Bardus.jpg`,
+  },
 ];
