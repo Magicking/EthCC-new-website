@@ -325,10 +325,10 @@ export const SPEAKERS: Speaker[] = [
   },
   {
     company: `SKALE Labs`,
-    firstname: `Konstatin`,
+    firstname: `Konstantin`,
     lastname: `Kladko`,
     link: `https://twitter.com/Stan_Kladko`,
-    picture: `/speakers/Konstatin_Kladko.jpg`,
+    picture: `/speakers/Konstantin_Kladko.jpg`,
   },
   {
     company: `Grassroots Economics`,
