@@ -747,7 +747,7 @@ export const SPEAKERS: Speaker[] = [
     company: `Polywrap`,
     firstname: `Jordan`,
     lastname: `Ellis`,
-    link: `https://twitter.com/Web3API`,
+    link: `https://twitter.com/polywrap_io`,
     picture: `/speakers/Jordan_Ellis.jpg`,
   },
   {
