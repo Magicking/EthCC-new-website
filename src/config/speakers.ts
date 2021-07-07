@@ -325,10 +325,10 @@ export const SPEAKERS: Speaker[] = [
   },
   {
     company: `SKALE Labs`,
-    firstname: `Konstatin`,
+    firstname: `Konstantin`,
     lastname: `Kladko`,
     link: `https://twitter.com/Stan_Kladko`,
-    picture: `/speakers/Konstatin_Kladko.jpg`,
+    picture: `/speakers/Konstantin_Kladko.jpg`,
   },
   {
     company: `Grassroots Economics`,
@@ -695,13 +695,6 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Susie_Batt.jpg`,
   },
   {
-    company: `Blockchangers`,
-    firstname: `Jon`,
-    lastname: `Ramvi`,
-    link: `https://twitter.com/JonRamvi`,
-    picture: `/speakers/Jon_Ramvi.jpg`,
-  },
-  {
     company: `TrueBlocks, LLC`,
     firstname: `Thomas-Jay`,
     lastname: `Rush`,
@@ -754,7 +747,7 @@ export const SPEAKERS: Speaker[] = [
     company: `Polywrap`,
     firstname: `Jordan`,
     lastname: `Ellis`,
-    link: `https://twitter.com/Web3API`,
+    link: `https://twitter.com/polywrap_io`,
     picture: `/speakers/Jordan_Ellis.jpg`,
   },
   {
@@ -1452,7 +1445,7 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Jeremy_Musighi.jpg`,
   },
   {
-    company: `Horkos Labs`,
+    company: `Privy`,
     firstname: `Henri`,
     lastname: `Stern`,
     link: `https://www.linkedin.com/in/henri-stern/`,
@@ -1515,13 +1508,6 @@ export const SPEAKERS: Speaker[] = [
     picture: `speakers/Vasiliy_Shapovalov.jpg`,
   },
   {
-    company: `CoinShares`,
-    firstname: `Meltem`,
-    lastname: `Demirors`,
-    link: `https://twitter.com/Melt_Dem`,
-    picture: `speakers/Meltem_Demirors.jpg`,
-  },
-  {
     company: `Spacemesh`,
     firstname: `Lane`,
     lastname: `Rettig`,
@@ -1555,5 +1541,54 @@ export const SPEAKERS: Speaker[] = [
     lastname: `Duperrin`,
     link: `https://twitter.com/pdup56`,
     picture: `speakers/Pierre_Duperrin.jpg`,
+  },
+  {
+    company: `Gnosis Safe`,
+    firstname: `Auryn`,
+    lastname: `Macmillan`,
+    link: `https://twitter.com/rimeissner`,
+    picture: `speakers/Auryn_Macmillan.jpg`,
+  },
+  {
+    company: `Common Stacks`,
+    firstname: `Griff`,
+    lastname: `Green`,
+    link: `https://twitter.com/thegrifft`,
+    picture: `speakers/Griff_Green.jpg`,
+  },
+  {
+    company: `ConsenSys`,
+    firstname: `Steven`,
+    lastname: `Haft`,
+    link: `https://linkedin.com/in/stevenhaft/`,
+    picture: `speakers/Steven_Haft.jpg`,
+  },
+  {
+    company: `Nethermind`,
+    firstname: `Marcello`,
+    lastname: `Bardus`,
+    link: `https://twitter.com/BardusMarcello`,
+    picture: `speakers/Marcello_Bardus.jpg`,
+  },
+  {
+    company: `Interchain Foundation`,
+    firstname: `Charly`,
+    lastname: `Fei`,
+    link: `https://twitter.com/charleenfei`,
+    picture: `speakers/Charly_Fei.jpg`,
+  },
+  {
+    company: `ConsenSys Diligence`,
+    firstname: `Goncalo`,
+    lastname: `Sa`,
+    link: `https://twitter.com/consensysaudits`,
+    picture: `speakers/Goncalo_Sa.jpg`,
+  },
+  {
+    company: `ConsenSys Diligence`,
+    firstname: `Joran`,
+    lastname: `Honig`,
+    link: `https://twitter.com/consensysaudits`,
+    picture: `speakers/Joran_Honig.jpg`,
   },
 ];
