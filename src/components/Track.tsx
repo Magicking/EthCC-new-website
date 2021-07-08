@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-import { Flex, Heading, Text, Close } from '@components';
+import { Flex, Heading, Text, Close, Box } from '@components';
 
 export const Item = ({ item }: { item: Record<string, string> }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -34,7 +34,7 @@ export const Item = ({ item }: { item: Record<string, string> }) => {
           mb: `20px`,
         }}
       >
-        <Flex sx={{ flexDirection: `column`, mr: `30px` }}>
+        <Flex sx={{ flexDirection: `column`, width: `75%` }}>
           <Heading
             as="h3"
             sx={{
@@ -54,7 +54,13 @@ export const Item = ({ item }: { item: Record<string, string> }) => {
               {` `}- {item.Category}
             </Text>
           </Heading>
-          <Flex sx={{ flexDirection: `row`, alignItems: `center`, mt: `5px` }}>
+          <Flex
+            sx={{
+              flexDirection: [`column`, `row`],
+              alignItems: [null, `center`],
+              mt: `5px`,
+            }}
+          >
             <Text sx={{ color: `primary`, textTransform: `capitalize` }}>
               {item.Speakers.toLowerCase()}
             </Text>
@@ -68,7 +74,9 @@ export const Item = ({ item }: { item: Record<string, string> }) => {
                 px: `5px`,
                 borderRadius: `.8rem`,
                 fontSize: `.8rem`,
-                ml: `20px`,
+                ml: [null, `20px`],
+                width: `fit-content`,
+                mt: [`10px`, 0],
               }}
             >
               {item[`In Person / Virtual`]}
@@ -79,7 +87,6 @@ export const Item = ({ item }: { item: Record<string, string> }) => {
         <Close
           sx={{
             color: `primary`,
-            width: `30px`,
             transform: isOpen ? `rotate(0deg)` : `rotate(45deg)`,
             transition: `all .3s ease`,
           }}
