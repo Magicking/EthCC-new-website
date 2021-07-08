@@ -3,7 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const Dotenv = require('dotenv-webpack');
+
+const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -17,7 +18,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [{ from: 'static' }],
     }),
-    new Dotenv(),
+    new NodePolyfillPlugin(),
   ],
   output: {
     filename: '[name].[contenthash].bundle.js',
@@ -51,5 +52,11 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
     plugins: [new TsconfigPathsPlugin()],
+    fallback: {
+      fs: false,
+      child_process: false,
+      net: false,
+      tls: false,
+    },
   },
 };

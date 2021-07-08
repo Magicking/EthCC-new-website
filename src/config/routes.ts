@@ -1,4 +1,4 @@
-import { EthVC, Home, Info, Speakers, Tickets } from '@pages';
+import { Agenda, EthVC, Home, Info, Speakers, Tickets } from '@pages';
 
 export const routes = {
   HOME: {
@@ -10,6 +10,11 @@ export const routes = {
     path: `/info`,
     name: `Info`,
     component: Info,
+  },
+  AGENDA: {
+    path: `/agenda`,
+    name: `Agenda`,
+    component: Agenda,
   },
   SPEAKERS: {
     path: `/speakers`,

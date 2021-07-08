@@ -247,8 +247,8 @@ const Home = () => {
             flexWrap: `wrap`,
           }}
         >
-          {PARTNERS.map((partner) => (
-            <Maccaron {...partner} size={150} />
+          {PARTNERS.map((partner, idx) => (
+            <Maccaron {...partner} size={150} key={idx} />
           ))}
         </Flex>
       </Container>

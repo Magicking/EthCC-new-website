@@ -8,5 +8,6 @@ export { SpeakerCard } from './SpeakerCard';
 export { Accordion } from './Accordion';
 export { Maccaron } from './Maccaron';
 export { default as CovidMap } from './CovidMap';
+export { Track } from './Track';
 // re-export all components from theme-ui
 export * from '@theme-ui/components';
