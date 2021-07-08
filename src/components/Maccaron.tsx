@@ -1,4 +1,4 @@
-import { Flex, Image, Link } from '@theme-ui/components';
+import { Flex, Image, Link, Box } from '@theme-ui/components';
 import React from 'react';
 
 export const Maccaron = ({
@@ -10,48 +10,87 @@ export const Maccaron = ({
 }: {
   name: string;
   picture: string;
-  link: string;
+  link?: string;
   size: number;
   zoom?: number;
-}) => (
-  <Link
-    href={link}
-    target="_blank"
-    rel="noopener noreferrer"
-    sx={{
-      backgroundColor: `#fff`,
-      borderWidth: `3px`,
-      borderColor: `primary`,
-      borderStyle: `solid`,
-      borderRadius: `50%`,
-      width: `${size}px`,
-      height: `${size}px`,
-      m: `20px`,
-      boxShadow: `0px 0px 13px -2px rgba(0,0,0,0.22)`,
-      transition: `all .3s ease`,
-      ':hover': {
-        transform: `scale(1.05)`,
-      },
-    }}
-  >
-    <Flex
+}) =>
+  link ? (
+    <Link
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
       sx={{
-        flexDirection: `column`,
-        alignItems: `center`,
-        justifyContent: `center`,
-        height: `100%`,
-        width: `100%`,
+        backgroundColor: `#fff`,
+        borderWidth: `3px`,
+        borderColor: `primary`,
+        borderStyle: `solid`,
+        borderRadius: `50%`,
+        width: `${size}px`,
+        height: `${size}px`,
+        m: `20px`,
+        boxShadow: `0px 0px 13px -2px rgba(0,0,0,0.22)`,
+        transition: `all .3s ease`,
+        ':hover': {
+          transform: `scale(1.05)`,
+        },
       }}
     >
-      <Image
-        src={picture}
-        alt={name}
+      <Flex
         sx={{
-          maxWidth: `${size * 0.58}px`,
-          maxHeight: `${size * 0.58}px`,
-          transform: `scale(${zoom || `1`})`,
+          flexDirection: `column`,
+          alignItems: `center`,
+          justifyContent: `center`,
+          height: `100%`,
+          width: `100%`,
         }}
-      />
-    </Flex>
-  </Link>
-);
+      >
+        <Image
+          src={picture}
+          alt={name}
+          sx={{
+            maxWidth: `${size * 0.58}px`,
+            maxHeight: `${size * 0.58}px`,
+            transform: `scale(${zoom || `1`})`,
+          }}
+        />
+      </Flex>
+    </Link>
+  ) : (
+    <Box
+      sx={{
+        backgroundColor: `#fff`,
+        borderWidth: `3px`,
+        borderColor: `primary`,
+        borderStyle: `solid`,
+        borderRadius: `50%`,
+        width: `${size}px`,
+        height: `${size}px`,
+        m: `20px`,
+        boxShadow: `0px 0px 13px -2px rgba(0,0,0,0.22)`,
+        transition: `all .3s ease`,
+        ':hover': {
+          transform: `scale(1.05)`,
+        },
+      }}
+    >
+      <Flex
+        sx={{
+          flexDirection: `column`,
+          alignItems: `center`,
+          justifyContent: `center`,
+          height: `100%`,
+          width: `100%`,
+        }}
+      >
+        <Image
+          src={picture}
+          alt={name}
+          sx={{
+            maxWidth: `${size * 0.58}px`,
+            maxHeight: `${size * 0.58}px`,
+            transform: `scale(${zoom || `1`})`,
+          }}
+        />
+      </Flex>
+    </Box>
+  );

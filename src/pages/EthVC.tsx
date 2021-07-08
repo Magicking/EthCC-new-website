@@ -8,8 +8,9 @@ import {
   Text,
   Link,
   Accordion,
+  Maccaron,
 } from '@components';
-import { INVITES_MAIL, VC_TRACK_VIRTUAL } from '@config';
+import { INVESTORS, INVITES_MAIL, VC_TRACK_VIRTUAL } from '@config';
 
 import kaiko from '@assets/kaiko.png';
 
@@ -360,6 +361,23 @@ const EthVC = () => (
           },
         ]}
       />
+    </Container>
+    <Container>
+      <Flex sx={{ mb: `3rem` }}>
+        <Heading variant="title">Investors</Heading>
+      </Flex>
+      <Flex
+        sx={{
+          flexDirection: [`column`, null, `row`],
+          alignItems: `center`,
+          flexWrap: `wrap`,
+          pb: `2rem`,
+        }}
+      >
+        {INVESTORS.map((item) => (
+          <Maccaron {...item} key={item.name} size={150} />
+        ))}
+      </Flex>
     </Container>
   </main>
 );

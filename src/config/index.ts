@@ -6,3 +6,4 @@ export * from './partners';
 export * from './sponsors';
 export * from './media';
 export * from './markers';
+export * from './investors';
