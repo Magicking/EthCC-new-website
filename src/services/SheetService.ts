@@ -8,9 +8,7 @@ const SheetService = () => {
 
       await doc.useServiceAccountAuth({
         client_email: process.env.GOOGLE_EMAIL,
-        private_key: Buffer.from(process.env.GOOGLE_PRIVATE_KEY, `base64`)
-          .toString(`utf-8`)
-          .replace(/\\n/g, `\n`),
+        private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, `\n`),
       });
 
       await doc.loadInfo();

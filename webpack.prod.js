@@ -5,7 +5,14 @@ const common = require('./webpack.common.js');
 module.exports = merge(common, {
   mode: 'production',
   devtool: 'source-map',
-  plugins: [new webpack.EnvironmentPlugin(['MAPS_API_KEY'])],
+  plugins: [
+    new webpack.EnvironmentPlugin([
+      'MAPS_API_KEY',
+      'GOOGLE_EMAIL',
+      'GOOGLE_PRIVATE_KEY',
+      'SPREADSHEET_ID',
+    ]),
+  ],
   optimization: {
     moduleIds: 'deterministic',
     splitChunks: {
