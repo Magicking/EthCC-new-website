@@ -702,7 +702,7 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Thomas-Jay_Rush.jpg`,
   },
   {
-    company: `Delphia`,
+    company: `Tantra Labs`,
     firstname: `Allison`,
     lastname: `Reichel`,
     link: `https://twitter.com/AllisonReichel`,
