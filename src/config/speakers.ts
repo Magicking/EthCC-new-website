@@ -1619,4 +1619,11 @@ export const SPEAKERS: Speaker[] = [
     link: `https://twitter.com/ashleighschap`,
     picture: `speakers/Ashleigh_Schap.jpg`,
   },
+  {
+    company: `Ethereum France & Cometh`,
+    firstname: `Jerome`,
+    lastname: `De Tychey`,
+    link: `https://twitter.com/jdetychey`,
+    picture: `speakers/Jerome_Detychey.jpg`,
+  },
 ];
