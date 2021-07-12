@@ -1612,4 +1612,11 @@ export const SPEAKERS: Speaker[] = [
     link: `https://twitter.com/evabeylin`,
     picture: `speakers/Eva_Beylin.jpg`,
   },
+  {
+    company: `ConsenSys`,
+    firstname: `Robert`,
+    lastname: `Drost`,
+    link: `https://www.linkedin.com/in/rjdrost/`,
+    picture: `speakers/Robert_Drost.jpg`,
+  },
 ];
