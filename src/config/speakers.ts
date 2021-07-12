@@ -628,7 +628,7 @@ export const SPEAKERS: Speaker[] = [
     company: `Crypto art advisor and collector`,
     firstname: `Fanny`,
     lastname: `Lakoubay`,
-    link: `https://twitter.com/twitter.com/flakoubay`,
+    link: `https://twitter.com/flakoubay`,
     picture: `/speakers/Fanny_Lakoubay.jpg`,
   },
   {
