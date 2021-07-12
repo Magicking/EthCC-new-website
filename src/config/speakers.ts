@@ -23,13 +23,6 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Tim_Beiko.jpg`,
   },
   {
-    company: `The Graph`,
-    firstname: `Tegan`,
-    lastname: `Kline`,
-    link: `https://twitter.com/theklineventure`,
-    picture: `/speakers/Tegan_Kline.jpg`,
-  },
-  {
     company: `ENS`,
     firstname: `Makoto`,
     lastname: `Inoue`,
@@ -219,7 +212,7 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Brenda_Loya.jpg`,
   },
   {
-    company: `Blockchains LLC`,
+    company: `Self Employed`,
     firstname: `Christoph`,
     lastname: `Jentzsch`,
     link: `https://twitter.com/ChrJentzsch`,
@@ -409,10 +402,10 @@ export const SPEAKERS: Speaker[] = [
   },
   {
     company: `pNetwork`,
-    firstname: `Thomas`,
-    lastname: `Bertani`,
-    link: `https://twitter.com/ThomasBertani`,
-    picture: `/speakers/Thomas_Bertani.jpg`,
+    firstname: `Andrea`,
+    lastname: `Fortugno`,
+    link: `https://twitter.com/andreafortugno_`,
+    picture: `/speakers/Andrea_Fortugno.jpg`,
   },
   {
     company: `Nexo`,
@@ -635,7 +628,7 @@ export const SPEAKERS: Speaker[] = [
     company: `Crypto art advisor and collector`,
     firstname: `Fanny`,
     lastname: `Lakoubay`,
-    link: `https://twitter.com/twitter.com/flakoubay`,
+    link: `https://twitter.com/flakoubay`,
     picture: `/speakers/Fanny_Lakoubay.jpg`,
   },
   {
@@ -702,7 +695,7 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Thomas-Jay_Rush.jpg`,
   },
   {
-    company: `Delphia`,
+    company: `Tantra Labs`,
     firstname: `Allison`,
     lastname: `Reichel`,
     link: `https://twitter.com/AllisonReichel`,
@@ -1182,7 +1175,7 @@ export const SPEAKERS: Speaker[] = [
     company: `Indexed Finance`,
     firstname: `Laurence`,
     lastname: `Day`,
-    link: `https://www.linkedin.com/in/laurenceday/`,
+    link: `https://twitter.com/laurence_e_day`,
     picture: `/speakers/Laurence_Day.jpg`,
   },
   {
@@ -1590,5 +1583,47 @@ export const SPEAKERS: Speaker[] = [
     lastname: `Honig`,
     link: `https://twitter.com/consensysaudits`,
     picture: `speakers/Joran_Honig.jpg`,
+  },
+  {
+    company: `Ethereum Foundation`,
+    firstname: `Aya`,
+    lastname: `Miyagotchi`,
+    link: `https://twitter.com/ayamiyagotchi`,
+    picture: `speakers/Aya_Miyagotchi.jpg`,
+  },
+  {
+    company: `The Graph`,
+    firstname: `Yaniv`,
+    lastname: `Tal`,
+    link: `https://twitter.com/yanivgraph`,
+    picture: `speakers/Yaniv_Tal.jpg`,
+  },
+  {
+    company: `The Graph Foundation`,
+    firstname: `Eva`,
+    lastname: `Beylin`,
+    link: `https://twitter.com/evabeylin`,
+    picture: `speakers/Eva_Beylin.jpg`,
+  },
+  {
+    company: `ConsenSys`,
+    firstname: `Robert`,
+    lastname: `Drost`,
+    link: `https://www.linkedin.com/in/rjdrost/`,
+    picture: `speakers/Robert_Drost.jpg`,
+  },
+  {
+    company: `Uniswap Labs`,
+    firstname: `Ashleigh`,
+    lastname: `Schap`,
+    link: `https://twitter.com/ashleighschap`,
+    picture: `speakers/Ashleigh_Schap.jpg`,
+  },
+  {
+    company: `Ethereum France & Cometh`,
+    firstname: `Jerome`,
+    lastname: `De Tychey`,
+    link: `https://twitter.com/jdetychey`,
+    picture: `speakers/Jerome_Detychey.jpg`,
   },
 ];
