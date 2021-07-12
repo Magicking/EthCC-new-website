@@ -71,6 +71,8 @@
     "axios": "^0.21.1",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "copy-webpack-plugin": "^9.0.0",
+    "date-fns": "2.22.1",
+    "date-fns-tz": "1.1.4",
     "dotenv-webpack": "7.0.3",
     "ethers": "^5.2.0",
     "fontsource-roboto-mono": "^4.0.0",

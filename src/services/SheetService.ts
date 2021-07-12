@@ -1,8 +1,7 @@
 import { GoogleSpreadsheet } from 'google-spreadsheet';
-import { groupBy } from 'ramda';
 
 const SheetService = () => {
-  const getSheet = async () => {
+  const getTracks = async () => {
     try {
       const doc = new GoogleSpreadsheet(process.env.SPREADSHEET_ID);
 
@@ -21,11 +20,6 @@ const SheetService = () => {
         e,
       );
     }
-  };
-
-  const getTracks = async () => {
-    const talks = await getSheet();
-    return groupBy((talk) => talk.Track, talks);
   };
 
   return { getTracks };

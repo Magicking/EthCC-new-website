@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { format, isValid } from 'date-fns';
 
-import { Flex, Heading, Text, Close, Box } from '@components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faClock } from '@fortawesome/free-solid-svg-icons';
+
+import { Flex, Heading, Text, Close } from '@components';
+import { getTrackColor } from '@utils';
 
 export const Item = ({ item }: { item: Record<string, string> }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
     <Flex
       sx={{
@@ -31,7 +35,6 @@ export const Item = ({ item }: { item: Record<string, string> }) => {
           flexDirection: `row`,
           justifyContent: `space-between`,
           width: `100%`,
-          mb: `20px`,
         }}
       >
         <Flex sx={{ flexDirection: `column`, width: `75%` }}>
@@ -56,30 +59,24 @@ export const Item = ({ item }: { item: Record<string, string> }) => {
           </Heading>
           <Flex
             sx={{
-              flexDirection: [`column`, `row`],
-              alignItems: [null, `center`],
+              flexDirection: [`column`, null, `row`],
+              alignItems: [null, null, `center`],
               mt: `5px`,
             }}
           >
             <Text sx={{ color: `primary`, textTransform: `capitalize` }}>
               {item.Speakers.toLowerCase()}
             </Text>
-            <Text
-              sx={{
-                backgroundColor:
-                  item[`In Person / Virtual`] === `virtual`
-                    ? `primary`
-                    : `text`,
-                color: `#fff`,
-                px: `5px`,
-                borderRadius: `.8rem`,
-                fontSize: `.8rem`,
-                ml: [null, `20px`],
-                width: `fit-content`,
-                mt: [`10px`, 0],
-              }}
-            >
-              {item[`In Person / Virtual`]}
+            <Text sx={{ mt: [`10px`, null, 0], ml: [null, null, `20px`] }}>
+              {isValid(new Date(`${item.Date}T${item.Hour}:00`)) &&
+                format(
+                  new Date(`${item.Date}T${item.Hour}:00`),
+                  `MMMM do h:mm aaa`,
+                )}
+            </Text>
+            <Text sx={{ mt: [`10px`, null, 0], ml: [null, null, `20px`] }}>
+              <FontAwesomeIcon icon={faClock} style={{ marginRight: `5px` }} />
+              {item.Time} min
             </Text>
           </Flex>
         </Flex>
@@ -91,6 +88,34 @@ export const Item = ({ item }: { item: Record<string, string> }) => {
             transition: `all .3s ease`,
           }}
         />
+      </Flex>
+      <Flex sx={{ flexDirection: `row`, mt: `15px`, mb: `20px` }}>
+        <Text
+          sx={{
+            backgroundColor:
+              item[`In Person / Virtual`] === `virtual` ? `primary` : `text`,
+            color: `#fff`,
+            px: `5px`,
+            borderRadius: `.8rem`,
+            fontSize: `.8rem`,
+            width: `fit-content`,
+          }}
+        >
+          {item[`In Person / Virtual`]}
+        </Text>
+        <Text
+          sx={{
+            backgroundColor: `tracks.${getTrackColor(item.Track)}`,
+            color: `#fff`,
+            px: `5px`,
+            borderRadius: `.8rem`,
+            fontSize: `.8rem`,
+            ml: `20px`,
+            width: `fit-content`,
+          }}
+        >
+          {item.Track}
+        </Text>
       </Flex>
       <Flex>
         <Text
