@@ -1598,4 +1598,11 @@ export const SPEAKERS: Speaker[] = [
     link: `https://twitter.com/ayamiyagotchi`,
     picture: `speakers/Aya_Miyagotchi.jpg`,
   },
+  {
+    company: `The Graph`,
+    firstname: `Yaniv`,
+    lastname: `Tal`,
+    link: `https://twitter.com/yanivgraph`,
+    picture: `speakers/Yaniv_Tal.jpg`,
+  },
 ];
