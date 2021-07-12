@@ -212,7 +212,7 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Brenda_Loya.jpg`,
   },
   {
-    company: `Blockchains LLC`,
+    company: `Self Employed`,
     firstname: `Christoph`,
     lastname: `Jentzsch`,
     link: `https://twitter.com/ChrJentzsch`,
