@@ -1175,7 +1175,7 @@ export const SPEAKERS: Speaker[] = [
     company: `Indexed Finance`,
     firstname: `Laurence`,
     lastname: `Day`,
-    link: `https://www.linkedin.com/in/laurenceday/`,
+    link: `https://twitter.com/laurence_e_day`,
     picture: `/speakers/Laurence_Day.jpg`,
   },
   {
