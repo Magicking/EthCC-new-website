@@ -409,10 +409,10 @@ export const SPEAKERS: Speaker[] = [
   },
   {
     company: `pNetwork`,
-    firstname: `Thomas`,
-    lastname: `Bertani`,
-    link: `https://twitter.com/ThomasBertani`,
-    picture: `/speakers/Thomas_Bertani.jpg`,
+    firstname: `Andrea`,
+    lastname: `Fortugno`,
+    link: `https://twitter.com/andreafortugno_`,
+    picture: `/speakers/Andrea_Fortugno.jpg`,
   },
   {
     company: `Nexo`,
