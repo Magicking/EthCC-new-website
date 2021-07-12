@@ -23,13 +23,6 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Tim_Beiko.jpg`,
   },
   {
-    company: `The Graph`,
-    firstname: `Tegan`,
-    lastname: `Kline`,
-    link: `https://twitter.com/theklineventure`,
-    picture: `/speakers/Tegan_Kline.jpg`,
-  },
-  {
     company: `ENS`,
     firstname: `Makoto`,
     lastname: `Inoue`,
