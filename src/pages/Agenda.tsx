@@ -32,7 +32,13 @@ const Agenda = () => {
   useEffect(() => {
     const getTalks = async () => {
       const res = await SheetService.getTracks();
-      setTalks(res);
+      setTalks(
+        res.sort(
+          (a, b) =>
+            getTime(new Date(`${a.Date}T${a.Hour}:00`)) -
+            getTime(new Date(`${b.Date}T${b.Hour}:00`)),
+        ),
+      );
     };
 
     getTalks();

@@ -39,6 +39,7 @@ export const theme = {
       Security: `#FFC15E`,
       Privacy: `#CC5803`,
       Enterprise: `#90F1EF`,
+      EthCC: `#D63230`,
     },
   },
   fontSizes: {

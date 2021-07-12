@@ -33,6 +33,8 @@ import celo from '@assets/sponsors/celo.jpg';
 import iexec from '@assets/sponsors/iexec.jpg';
 import quantstamp from '@assets/sponsors/quantstamp.png';
 import polygon from '@assets/sponsors/polygon.svg';
+import ethereum from '@assets/sponsors/ethereum.jpg';
+import swarm from '@assets/sponsors/swarm.jpg';
 
 interface SponsorGroup {
   size: number;
@@ -95,6 +97,11 @@ export const SILVER: SponsorGroup = {
       picture: near,
       link: `https://near.org/`,
       zoom: 1.4,
+    },
+    {
+      name: `Ethereum Fundation`,
+      picture: ethereum,
+      link: `https://ethereum.org/en/`,
     },
   ],
 };
@@ -212,6 +219,12 @@ export const IRON: SponsorGroup = {
       picture: polygon,
       link: `https://polygon.technology/`,
       zoom: 1.1,
+    },
+    {
+      name: `Swarm`,
+      picture: swarm,
+      link: `https://www.ethswarm.org/`,
+      zoom: 1.4,
     },
   ],
 };

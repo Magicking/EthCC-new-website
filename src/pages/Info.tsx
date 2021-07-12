@@ -84,14 +84,8 @@ const Info = () => (
       <Flex sx={{ flexDirection: `column` }}>
         <Text sx={{ mb: `3rem` }}>
           Several pharmacies close by the venue will provide{` `}
-          <Text sx={{ color: `primary` }}>
-            free COVID tests to EthCC attendees
-          </Text>
-          : you can find them on this map, here are their details. You will
-          simply have to{` `}
-          <Text sx={{ color: `primary` }}>
-            show your attendee bracelet to receive a test.
-          </Text>
+          <Text sx={{ color: `primary` }}>COVID tests</Text>
+          .The closest ones are visible on this map.
         </Text>
       </Flex>
       <Flex
