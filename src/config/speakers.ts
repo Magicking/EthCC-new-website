@@ -1591,4 +1591,11 @@ export const SPEAKERS: Speaker[] = [
     link: `https://twitter.com/consensysaudits`,
     picture: `speakers/Joran_Honig.jpg`,
   },
+  {
+    company: `Ethereum Foundation`,
+    firstname: `Aya`,
+    lastname: `Miyagotchi`,
+    link: `https://twitter.com/ayamiyagotchi`,
+    picture: `speakers/Aya_Miyagotchi.jpg`,
+  },
 ];
