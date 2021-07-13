@@ -1137,7 +1137,7 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Dan_Reecer.jpg`,
   },
   {
-    company: `Heliax (Anoma)`,
+    company: `Anoma`,
     firstname: `Christopher`,
     lastname: `Goes`,
     link: `https://twitter.com/cwgoes`,
