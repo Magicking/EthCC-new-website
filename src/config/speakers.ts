@@ -1633,4 +1633,11 @@ export const SPEAKERS: Speaker[] = [
     link: `https://twitter.com/dantounet`,
     picture: `speakers/Franck_Royer.jpg`,
   },
+  {
+    company: `ConsenSys Diligence / Concordia University`,
+    firstname: `Shayan`,
+    lastname: `Eskandari`,
+    link: `https://shayan.es`,
+    picture: `/speakers/Shayan_Eskandari.jpg`,
+  },
 ];
