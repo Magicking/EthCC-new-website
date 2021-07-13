@@ -78,6 +78,9 @@ export const Item = ({ item }: { item: Record<string, string> }) => {
               <FontAwesomeIcon icon={faClock} style={{ marginRight: `5px` }} />
               {item.Time} min
             </Text>
+            <Text sx={{ mt: [`10px`, null, 0], ml: [null, null, `20px`] }}>
+              {item.Room}
+            </Text>
           </Flex>
         </Flex>
 
@@ -188,7 +191,7 @@ export const Track = ({
           alignItems: `center`,
           mx: `25px`,
           overflow: `hidden`,
-          maxHeight: isOpen ? `10000px` : `0`,
+          maxHeight: isOpen ? `1000000px` : `0`,
           opacity: isOpen ? `1` : `0`,
           transition: `all .5s ease`,
         }}

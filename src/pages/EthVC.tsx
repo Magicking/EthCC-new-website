@@ -6,11 +6,10 @@ import {
   Heading,
   Image,
   Text,
-  Link,
   Accordion,
   Maccaron,
 } from '@components';
-import { INVESTORS, INVITES_MAIL, VC_TRACK_VIRTUAL } from '@config';
+import { INVESTORS } from '@config';
 
 import kaiko from '@assets/kaiko.png';
 
@@ -331,28 +330,20 @@ const EthVC = () => (
               <Flex sx={{ flexDirection: `column` }}>
                 <ul>
                   <li>
-                    <Link
-                      sx={{ textDecoration: `underline` }}
-                      href={VC_TRACK_VIRTUAL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <Text sx={{ textDecoration: `line-through` }}>
                       Buy the “VC Track Virtual”
-                    </Link>
-                    {` `}
-                    (virtual passes for up to 4 attendees): €799 (+tax) Buy
-                    =&gt; here
+                    </Text>
+                    {` `}(sold out) (virtual passes for up to 4 attendees): €799
+                    (+tax) Buy =&gt; here
                   </li>
                   <li>
                     <Text>
                       VC Track “In person” (2 in-person passes + 2 virtual
                       passes): €1,499 (+ tax),{` `}
-                      <Link
-                        href={INVITES_MAIL}
-                        sx={{ textDecoration: `underline` }}
-                      >
+                      <Text sx={{ textDecoration: `line-through` }}>
                         Invite Only
-                      </Link>
+                      </Text>
+                      {` `}(sold out)
                     </Text>
                   </li>
                 </ul>
