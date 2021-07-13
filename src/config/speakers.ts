@@ -1587,9 +1587,9 @@ export const SPEAKERS: Speaker[] = [
   {
     company: `Ethereum Foundation`,
     firstname: `Aya`,
-    lastname: `Miyagotchi`,
+    lastname: `Miyaguchi`,
     link: `https://twitter.com/ayamiyagotchi`,
-    picture: `speakers/Aya_Miyagotchi.jpg`,
+    picture: `speakers/Aya_Miyaguchi.jpg`,
   },
   {
     company: `The Graph`,
