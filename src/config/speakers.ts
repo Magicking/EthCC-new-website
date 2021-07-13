@@ -1137,7 +1137,7 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Dan_Reecer.jpg`,
   },
   {
-    company: `Heliax (Anoma)`,
+    company: `Anoma`,
     firstname: `Christopher`,
     lastname: `Goes`,
     link: `https://twitter.com/cwgoes`,
@@ -1587,9 +1587,9 @@ export const SPEAKERS: Speaker[] = [
   {
     company: `Ethereum Foundation`,
     firstname: `Aya`,
-    lastname: `Miyagotchi`,
+    lastname: `Miyaguchi`,
     link: `https://twitter.com/ayamiyagotchi`,
-    picture: `speakers/Aya_Miyagotchi.jpg`,
+    picture: `speakers/Aya_Miyaguchi.jpg`,
   },
   {
     company: `The Graph`,
@@ -1625,5 +1625,19 @@ export const SPEAKERS: Speaker[] = [
     lastname: `De Tychey`,
     link: `https://twitter.com/jdetychey`,
     picture: `speakers/Jerome_Detychey.jpg`,
+  },
+  {
+    company: `Status`,
+    firstname: `Franck`,
+    lastname: `Royer`,
+    link: `https://twitter.com/dantounet`,
+    picture: `speakers/Franck_Royer.jpg`,
+  },
+  {
+    company: `ConsenSys Diligence / Concordia University`,
+    firstname: `Shayan`,
+    lastname: `Eskandari`,
+    link: `https://shayan.es`,
+    picture: `/speakers/Shayan_Eskandari.jpg`,
   },
 ];
