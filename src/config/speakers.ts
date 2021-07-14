@@ -1661,4 +1661,11 @@ export const SPEAKERS: Speaker[] = [
     link: `https://twitter.com/juanbenet`,
     picture: `/speakers/Juan_Benet.jpg`,
   },
+  {
+    company: `Synthetix`,
+    firstname: `Kain`,
+    lastname: `Warwick`,
+    link: `https://twitter.com/kaiynne`,
+    picture: `/speakers/Kain_Warwick.jpg`,
+  },
 ];
