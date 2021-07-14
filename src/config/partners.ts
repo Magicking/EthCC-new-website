@@ -1,5 +1,6 @@
 import maisonmutualite from '@assets/partners/maisonmutualite.png';
 import gitcoin from '@assets/partners/gitcoin.png';
+import interspace from '@assets/partners/interspace.svg';
 import panvala from '@assets/partners/panvala.jpg';
 
 interface Partner {
@@ -26,5 +27,11 @@ export const PARTNERS: Partner[] = [
     picture: panvala,
     link: `https://panvala.com/`,
     zoom: 1.5,
+  },
+  {
+    name: `Interspace`,
+    picture: interspace,
+    link: `https://gitcoin.co/grants/516/interspacechat`,
+    zoom: 2.1,
   },
 ];
