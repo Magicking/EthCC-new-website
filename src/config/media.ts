@@ -5,6 +5,7 @@ import francecrypto from '@assets/media/francecrypto.png';
 import nftmorning from '@assets/media/nftmorning.png';
 import cryptonewsz from '@assets/media/cryptonewsz.png';
 import interspace from '@assets/media/interspace.svg';
+import rekt from '@assets/media/rekt.png';
 
 interface Media {
   name: string;
@@ -54,5 +55,11 @@ export const MEDIA: Media[] = [
     picture: interspace,
     link: `https://gitcoin.co/grants/516/interspacechat`,
     zoom: 1,
+  },
+  {
+    name: `Rekt`,
+    picture: rekt,
+    link: `https://www.rekt.news/`,
+    zoom: 1.5,
   },
 ];
