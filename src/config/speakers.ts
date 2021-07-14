@@ -1539,7 +1539,7 @@ export const SPEAKERS: Speaker[] = [
     company: `Gnosis Safe`,
     firstname: `Auryn`,
     lastname: `Macmillan`,
-    link: `https://twitter.com/rimeissner`,
+    link: `https://twitter.com/auryn_macmillan`,
     picture: `speakers/Auryn_Macmillan.jpg`,
   },
   {
@@ -1639,5 +1639,26 @@ export const SPEAKERS: Speaker[] = [
     lastname: `Eskandari`,
     link: `https://shayan.es`,
     picture: `/speakers/Shayan_Eskandari.jpg`,
+  },
+  {
+    company: `Near Protocol`,
+    firstname: `Daniella`,
+    lastname: `Osorio`,
+    link: `https://twitter.com/WaverlyMaven`,
+    picture: `/speakers/Daniella_Osorio.jpg`,
+  },
+  {
+    company: `Ethereum Foundation`,
+    firstname: `Guillaume`,
+    lastname: `Ballet`,
+    link: ``,
+    picture: `/speakers/Guillaume_Ballet.jpg`,
+  },
+  {
+    company: `Protocol Labs`,
+    firstname: `Juan`,
+    lastname: `Benet`,
+    link: `https://twitter.com/juanbenet`,
+    picture: `/speakers/Juan_Benet.jpg`,
   },
 ];
