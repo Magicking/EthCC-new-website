@@ -1,4 +1,5 @@
 import aave from '@assets/sponsors/aave.png';
+import opera from '@assets/sponsors/opera.jpg';
 import apwine from '@assets/sponsors/apwine.png';
 import yap from '@assets/partners/yap.png';
 import audius from '@assets/sponsors/audius.png';
@@ -224,6 +225,12 @@ export const IRON: SponsorGroup = {
       name: `Swarm`,
       picture: swarm,
       link: `https://www.ethswarm.org/`,
+      zoom: 1.4,
+    },
+    {
+      name: `Opera`,
+      picture: opera,
+      link: `https://www.opera.com/`,
       zoom: 1.4,
     },
   ],
