@@ -1647,4 +1647,11 @@ export const SPEAKERS: Speaker[] = [
     link: `https://twitter.com/WaverlyMaven`,
     picture: `/speakers/Daniall_Osorio.jpg`,
   },
+  {
+    company: `Ethereum Foundation`,
+    firstname: `Guillaume`,
+    lastname: `Ballet`,
+    link: ``,
+    picture: `/speakers/Guillaume_Ballet.jpg`,
+  },
 ];
