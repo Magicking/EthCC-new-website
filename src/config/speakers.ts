@@ -1654,4 +1654,11 @@ export const SPEAKERS: Speaker[] = [
     link: ``,
     picture: `/speakers/Guillaume_Ballet.jpg`,
   },
+  {
+    company: `Protocol Labs`,
+    firstname: `Juan`,
+    lastname: `Benet`,
+    link: `https://twitter.com/juanbenet`,
+    picture: `/speakers/Juan_Benet.jpg`,
+  },
 ];
