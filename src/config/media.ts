@@ -4,6 +4,7 @@ import defiprime from '@assets/media/defiprime.png';
 import francecrypto from '@assets/media/francecrypto.png';
 import nftmorning from '@assets/media/nftmorning.png';
 import cryptonewsz from '@assets/media/cryptonewsz.png';
+import interspace from '@assets/media/interspace.svg';
 
 interface Media {
   name: string;
@@ -47,5 +48,11 @@ export const MEDIA: Media[] = [
     picture: cryptonewsz,
     link: `https://www.cryptonewsz.com/`,
     zoom: 1.4,
+  },
+  {
+    name: `Interspace`,
+    picture: interspace,
+    link: `https://gitcoin.co/grants/516/interspacechat`,
+    zoom: 1,
   },
 ];
