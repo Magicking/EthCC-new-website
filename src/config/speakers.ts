@@ -1640,4 +1640,11 @@ export const SPEAKERS: Speaker[] = [
     link: `https://shayan.es`,
     picture: `/speakers/Shayan_Eskandari.jpg`,
   },
+  {
+    company: `Near Protocol`,
+    firstname: `Daniella`,
+    lastname: `Osorio`,
+    link: `https://twitter.com/WaverlyMaven`,
+    picture: `/speakers/Daniall_Osorio.jpg`,
+  },
 ];
