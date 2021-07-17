@@ -1371,7 +1371,7 @@ export const SPEAKERS: Speaker[] = [
     company: `skytale.finance `,
     firstname: `Enrico`,
     lastname: `Mariotti`,
-    link: `https://twitter.com/enricomar`,
+    link: `https://twitter.com/enr_74/`,
     picture: `/speakers/Enrico_Mariotti.jpg`,
   },
   {
