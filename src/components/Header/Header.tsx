@@ -78,19 +78,32 @@ export const Header = () => {
           >
             {Object.keys(routes).map((idx) =>
               routes[idx].button ? (
-                <Link
-                  key={idx}
-                  to={routes[idx].path}
-                  style={{ textDecoration: `none`, marginLeft: `20px` }}
-                >
+                routes[idx].external ? (
                   <ThemeLink
-                    as="p"
+                    key={idx}
+                    href={routes[idx].path}
                     variant="primary"
-                    sx={{ fontSize: `14px`, color: `primary` }}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{ fontSize: `14px`, color: `primary`, ml: `20px` }}
                   >
                     {routes[idx].name}
                   </ThemeLink>
-                </Link>
+                ) : (
+                  <Link
+                    key={idx}
+                    to={routes[idx].path}
+                    style={{ textDecoration: `none`, marginLeft: `20px` }}
+                  >
+                    <ThemeLink
+                      as="p"
+                      variant="primary"
+                      sx={{ fontSize: `14px`, color: `primary` }}
+                    >
+                      {routes[idx].name}
+                    </ThemeLink>
+                  </Link>
+                )
               ) : (
                 <HeaderLink
                   key={idx}

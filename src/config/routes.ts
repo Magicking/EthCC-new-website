@@ -6,7 +6,7 @@ export const routes = {
     name: `Home`,
     component: Home,
   },
-  ABOUT: {
+  INFO: {
     path: `/info`,
     name: `Info`,
     component: Info,
@@ -26,10 +26,16 @@ export const routes = {
     name: `EthVC`,
     component: EthVC,
   },
-  BUY_TICKETS: {
-    path: `/tickets`,
-    name: `Buy Tickets`,
-    component: Tickets,
+  // BUY_TICKETS: {
+  //   path: `/tickets`,
+  //   name: `Buy Tickets`,
+  //   component: Tickets,
+  //   button: true,
+  // },
+  INTERSPACE: {
+    path: `https://ethcc.interspace.chat/`,
+    name: `Interspace`,
     button: true,
+    external: true,
   },
 };

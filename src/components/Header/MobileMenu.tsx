@@ -61,20 +61,33 @@ export const MobileMenu = ({
           <Flex sx={{ flexDirection: `column`, px: `40px` }}>
             {Object.keys(routes).map((idx) =>
               routes[idx].button ? (
-                <Link
-                  key={idx}
-                  to={routes[idx].path}
-                  onClick={closeMenu}
-                  style={{ textDecoration: `none`, marginTop: `20px` }}
-                >
+                routes[idx].external ? (
                   <ThemeLink
-                    as="p"
+                    key={idx}
+                    href={routes[idx].path}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     variant="primary"
-                    sx={{ fontSize: `18px`, color: `primary` }}
+                    sx={{ fontSize: `18px`, color: `primary`, mt: `20px` }}
                   >
                     {routes[idx].name}
                   </ThemeLink>
-                </Link>
+                ) : (
+                  <Link
+                    key={idx}
+                    to={routes[idx].path}
+                    onClick={closeMenu}
+                    style={{ textDecoration: `none`, marginTop: `20px` }}
+                  >
+                    <ThemeLink
+                      as="p"
+                      variant="primary"
+                      sx={{ fontSize: `18px`, color: `primary` }}
+                    >
+                      {routes[idx].name}
+                    </ThemeLink>
+                  </Link>
+                )
               ) : (
                 <MobileHeaderLink
                   key={idx}

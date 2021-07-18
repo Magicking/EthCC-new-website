@@ -15,14 +15,17 @@ export const Router = () => {
 
   return (
     <Switch>
-      {Object.keys(routes).map((route) => (
-        <Route
-          key={routes[route].name}
-          exact
-          path={routes[route].path}
-          component={routes[route].component}
-        />
-      ))}
+      {Object.keys(routes).map(
+        (route) =>
+          !routes[route].external && (
+            <Route
+              key={routes[route].name}
+              exact
+              path={routes[route].path}
+              component={routes[route].component}
+            />
+          ),
+      )}
       <Route path="*">
         <NotFound />
       </Route>

@@ -9,5 +9,6 @@ export { Accordion } from './Accordion';
 export { Maccaron } from './Maccaron';
 export { default as CovidMap } from './CovidMap';
 export { Track } from './Track';
+export { CovidModal } from './CovidModal';
 // re-export all components from theme-ui
 export * from '@theme-ui/components';

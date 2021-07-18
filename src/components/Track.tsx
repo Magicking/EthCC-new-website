@@ -1,15 +1,32 @@
 import React, { useState } from 'react';
 
-import { format, isValid } from 'date-fns';
+import { format, isValid, addMinutes } from 'date-fns';
+import makeUrl, { TCalendarEvent } from 'add-event-to-calendar';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faClock } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCalendarPlus,
+  faChevronDown,
+  faClock,
+} from '@fortawesome/free-solid-svg-icons';
 
-import { Flex, Heading, Text, Close } from '@components';
+import { Flex, Heading, Text, Close, Link } from '@components';
 import { getTrackColor } from '@utils';
+import { Track as ITrack } from '@types';
 
-export const Item = ({ item }: { item: Record<string, string> }) => {
+export const Item = ({ item }: { item: ITrack }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const getCalendarEvent = (track: ITrack): TCalendarEvent => ({
+    name: `${track.Speakers} - ${track.Title} @EthCC[4]`,
+    location: `24 Rue Saint-Victor, 75005 Paris`,
+    details: track.Abstract,
+    startsAt: new Date(`${item.Date}T${item.Hour}:00`).toString(),
+    endsAt: addMinutes(
+      new Date(`${item.Date}T${item.Hour}:00`),
+      Number(track.Time),
+    ).toString(),
+  });
 
   return (
     <Flex
@@ -83,14 +100,24 @@ export const Item = ({ item }: { item: Record<string, string> }) => {
             </Text>
           </Flex>
         </Flex>
-
-        <Close
-          sx={{
-            color: `primary`,
-            transform: isOpen ? `rotate(0deg)` : `rotate(45deg)`,
-            transition: `all .3s ease`,
-          }}
-        />
+        <Flex sx={{ flexDirection: `column`, alignItems: `center` }}>
+          <Close
+            sx={{
+              color: `primary`,
+              transform: isOpen ? `rotate(0deg)` : `rotate(45deg)`,
+              transition: `all .3s ease`,
+              mb: `25px`,
+            }}
+          />
+          <Link
+            href={makeUrl(getCalendarEvent(item)).google}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <FontAwesomeIcon icon={faCalendarPlus} size="lg" />
+          </Link>
+        </Flex>
       </Flex>
       <Flex sx={{ flexDirection: `row`, mt: `15px`, mb: `20px` }}>
         <Text
@@ -141,11 +168,13 @@ export const Item = ({ item }: { item: Record<string, string> }) => {
 export const Track = ({
   name,
   items,
+  shouldOpen,
 }: {
   name: string;
-  items: Record<string, string>[];
+  items: ITrack[];
+  shouldOpen?: boolean;
 }) => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(!!shouldOpen);
 
   return (
     <Flex

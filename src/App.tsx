@@ -10,10 +10,6 @@ import { theme } from '@theme';
 
 import 'fontsource-roboto-mono/latin.css';
 
-/**
- * Root component that we provide to Gatsby to wrap all our
- * components in.
- */
 const App = () => (
   <Web3ReactProvider getLibrary={getLibrary}>
     <UnlockProvider>
