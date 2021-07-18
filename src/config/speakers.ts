@@ -621,7 +621,7 @@ export const SPEAKERS: Speaker[] = [
     company: `Commonwealth Labs`,
     firstname: `Drew`,
     lastname: `Stone`,
-    link: `https://twitter.com/drew___stone`,
+    link: `https://twitter.com/zksnark`,
     picture: `/speakers/Drew_Stone.jpg`,
   },
   {
