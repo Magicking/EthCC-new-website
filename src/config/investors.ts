@@ -8,7 +8,7 @@ import coinfund from '@assets/investors/coinfund.png';
 import commerzventures from '@assets/investors/commerzventures.png';
 import cygni from '@assets/investors/cygni.png';
 import dekryptcapital from '@assets/investors/dekryptcapital.jpg';
-import dxdao from '@assets/investors/dxdao.png';
+import dxdao from '@assets/investors/dxdao.jpg';
 import edenblock from '@assets/investors/edenblock.png';
 import fpv from '@assets/investors/fpv.png';
 import frst from '@assets/investors/frst.png';

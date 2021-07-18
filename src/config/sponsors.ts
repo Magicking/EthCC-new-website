@@ -177,6 +177,12 @@ export const BRONZE: SponsorGroup = {
       picture: iexec,
       link: `https://iex.ec/`,
     },
+    {
+      name: `Swarm`,
+      picture: swarm,
+      link: `https://www.ethswarm.org/`,
+      zoom: 1.4,
+    },
   ],
 };
 
@@ -220,12 +226,6 @@ export const IRON: SponsorGroup = {
       picture: polygon,
       link: `https://polygon.technology/`,
       zoom: 1.1,
-    },
-    {
-      name: `Swarm`,
-      picture: swarm,
-      link: `https://www.ethswarm.org/`,
-      zoom: 1.4,
     },
     {
       name: `Opera`,
