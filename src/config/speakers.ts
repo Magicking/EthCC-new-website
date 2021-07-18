@@ -1672,7 +1672,7 @@ export const SPEAKERS: Speaker[] = [
     company: `EAS`,
     firstname: `Leonid`,
     lastname: `Beder`,
-    link: `https://twitter.com/lbeder`,
+    link: `https://twitter.com/LeonidBeder`,
     picture: `/speakers/Leonid_Beder.jpg`,
   },
 ];
