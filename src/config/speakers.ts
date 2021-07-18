@@ -1371,7 +1371,7 @@ export const SPEAKERS: Speaker[] = [
     company: `skytale.finance `,
     firstname: `Enrico`,
     lastname: `Mariotti`,
-    link: `https://twitter.com/enr_74/`,
+    link: `https://twi  tter.com/enr_74/`,
     picture: `/speakers/Enrico_Mariotti.jpg`,
   },
   {
@@ -1667,5 +1667,12 @@ export const SPEAKERS: Speaker[] = [
     lastname: `Warwick`,
     link: `https://twitter.com/kaiynne`,
     picture: `/speakers/Kain_Warwick.jpg`,
+  },
+  {
+    company: `EAS`,
+    firstname: `Leonid`,
+    lastname: `Beder`,
+    link: `https://twitter.com/lbeder`,
+    picture: `/speakers/Leonid_Beder.jpg`,
   },
 ];
