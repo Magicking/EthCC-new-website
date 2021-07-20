@@ -5,7 +5,7 @@ const common = require('./webpack.common.js');
 module.exports = merge(common, {
   mode: 'production',
   devtool: 'source-map',
-  plugins: [new webpack.EnvironmentPlugin(['TALKS_API_UR'])],
+  plugins: [new webpack.EnvironmentPlugin(['TALKS_API_URL'])],
   optimization: {
     moduleIds: 'deterministic',
     splitChunks: {
