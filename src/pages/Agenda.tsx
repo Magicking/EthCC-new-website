@@ -26,6 +26,9 @@ import { Track as ITrack } from '@types';
 import { routes } from '@config';
 
 const Agenda = () => {
+  const [response, setResponse] = useState<
+    GoogleSpreadsheetRow[] | undefined
+  >();
   const [talks, setTalks] = useState<GoogleSpreadsheetRow[] | undefined>();
   const [sorted, setSorted] = useState<
     Record<string, GoogleSpreadsheetRow[]> | undefined
@@ -43,8 +46,16 @@ const Agenda = () => {
   useEffect(() => {
     const getTalks = async () => {
       const res: GoogleSpreadsheetRow[] = await SheetService.getTracks();
+      setResponse(res);
+    };
+
+    getTalks();
+  }, []);
+
+  useEffect(() => {
+    if (response) {
       setTalks(
-        res
+        response
           .sort(
             (a, b) =>
               getTime(new Date(`${a.Date}T${a.Hour}:00`)) -
@@ -61,7 +72,7 @@ const Agenda = () => {
       );
 
       setOptions(
-        uniq(res.map((talk) => talk.Track)).reduce(
+        uniq(response.map((talk) => talk.Track)).reduce(
           (acc, track) => [
             ...acc,
             {
@@ -72,10 +83,8 @@ const Agenda = () => {
           [],
         ),
       );
-    };
-
-    getTalks();
-  }, [setTalks, hidePast, selectedTracks]);
+    }
+  }, [response, setTalks, hidePast, selectedTracks]);
 
   useEffect(() => {
     if (talks) {
@@ -258,7 +267,7 @@ const Agenda = () => {
                   name={
                     sortingKey === `Date`
                       ? isValid(new Date(key)) &&
-                        format(new Date(key), `MMMM do`)
+                        format(new Date(`${key}T03:00:00`), `MMMM do`)
                       : key
                   }
                   items={(sorted[key] as unknown) as ITrack[]}
