@@ -42,7 +42,7 @@ const Agenda = () => {
 
   useEffect(() => {
     const getTalks = async () => {
-      const res = await SheetService.getTracks();
+      const res: GoogleSpreadsheetRow[] = await SheetService.getTracks();
       setTalks(
         res
           .sort(
