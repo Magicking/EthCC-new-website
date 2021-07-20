@@ -499,7 +499,7 @@ export const SPEAKERS: Speaker[] = [
     picture: `/speakers/Joseph_Delong.jpg`,
   },
   {
-    company: `L2P.finance`,
+    company: `JellyFi.io`,
     firstname: `Alexis`,
     lastname: `Masseron`,
     link: `https://twitter.com/AlexisMasseron`,
